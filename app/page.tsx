@@ -530,7 +530,52 @@ export default function LandingPage() {
             </a>
           </div>
         </section>
+<section
+  style={{
+    textAlign: "center",
+    padding: "80px 24px",
+    backgroundColor: "#111111",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "42px",
+      marginBottom: "20px",
+    }}
+  >
+    Mehr zum Thema Alkohol aufhören
+  </h2>
 
+  <p
+    style={{
+      fontSize: "20px",
+      color: "#cfcfcf",
+      marginBottom: "30px",
+      maxWidth: "700px",
+      marginInline: "auto",
+    }}
+  >
+    Ehrliche Artikel über Alkoholabhängigkeit,
+    Rückfälle, alkoholfrei leben
+    und warum kontrolliertes Trinken oft scheitert.
+  </p>
+
+  <a
+    href="/blog"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#D68A1F",
+      color: "black",
+      padding: "18px 34px",
+      borderRadius: "16px",
+      fontWeight: 700,
+      fontSize: "18px",
+      textDecoration: "none",
+    }}
+  >
+    Zum Blog
+  </a>
+</section>
         {/* FOOTER */}
         <footer
           style={{
