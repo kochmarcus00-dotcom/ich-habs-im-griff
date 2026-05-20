@@ -375,9 +375,7 @@ export default function LandingPage() {
             Datenschutz
           </a>
         </footer>
-
-        {/* STICKY BUTTON */}
-              </main>
+      </main>
     </>
   );
 }
