@@ -1,0 +1,107 @@
+export const metadata = {
+  title: "Blog | Alkohol aufhören und alkoholfrei leben",
+  description:
+    "Artikel über Alkohol aufhören, alkoholfrei leben, Rückfälle, Alkoholabhängigkeit und nüchtern werden.",
+};
+
+export default function BlogPage() {
+  const posts = [
+    {
+      title: "Warum weniger trinken nicht funktioniert",
+      slug: "weniger-trinken",
+      excerpt:
+        "Die gefährlichste Lüge beim Alkoholproblem ist der Gedanke, man hätte alles unter Kontrolle.",
+    },
+    {
+      title: "30 Tage ohne Alkohol",
+      slug: "30-tage-ohne-alkohol",
+      excerpt:
+        "Was wirklich passiert, wenn du 30 Tage keinen Alkohol trinkst.",
+    },
+    {
+      title: "Bin ich alkoholabhängig?",
+      slug: "bin-ich-alkoholabhaengig",
+      excerpt:
+        "Die ehrlichsten Warnzeichen, die fast niemand wahrhaben will.",
+    },
+  ];
+
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#0B0B0B",
+        color: "white",
+        fontFamily: "Arial, sans-serif",
+        padding: "80px 24px",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "64px",
+            marginBottom: "20px",
+          }}
+        >
+          Blog
+        </h1>
+
+        <p
+          style={{
+            fontSize: "22px",
+            color: "#cfcfcf",
+            marginBottom: "60px",
+          }}
+        >
+          Ehrliche Artikel über Alkohol, Rückfälle,
+          Alkoholabhängigkeit und den Weg in ein alkoholfreies Leben.
+        </p>
+
+        <div
+          style={{
+            display: "grid",
+            gap: "28px",
+          }}
+        >
+          {posts.map((post) => (
+            <a
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              style={{
+                display: "block",
+                padding: "30px",
+                backgroundColor: "#111111",
+                borderRadius: "18px",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              <h2
+                style={{
+                  fontSize: "32px",
+                  marginBottom: "12px",
+                }}
+              >
+                {post.title}
+              </h2>
+
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
+                {post.excerpt}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
