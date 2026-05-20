@@ -102,6 +102,25 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+<div
+  style={{
+    textAlign: "center",
+    marginTop: "80px",
+  }}
+>
+  <a
+    href="/"
+    style={{
+      display: "inline-block",
+      color: "#D68A1F",
+      textDecoration: "none",
+      fontWeight: 700,
+      fontSize: "20px",
+    }}
+  >
+    ← Zurück zur Hauptseite
+  </a>
+</div>
     </main>
   );
 }
