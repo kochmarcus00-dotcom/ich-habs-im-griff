@@ -377,38 +377,7 @@ export default function LandingPage() {
         </footer>
 
         {/* STICKY BUTTON */}
-        <div
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            zIndex: 999,
-            width: "min(90%, 420px)",
-            textAlign: "center",
-          }}
-        >
-          <a
-            className="breathing-button"
-            href="https://www.amazon.de/dp/B0GH8RX7W6"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "block",
-              backgroundColor: "#D68A1F",
-              color: "black",
-              padding: "18px 28px",
-              borderRadius: "18px",
-              fontWeight: 800,
-              fontSize: "20px",
-              textDecoration: "none",
-              boxShadow: "0 12px 30px rgba(0,0,0,0.35)",
-            }}
-          >
-            Ich will da raus
-          </a>
-        </div>
-      </main>
+              </main>
     </>
   );
 }
