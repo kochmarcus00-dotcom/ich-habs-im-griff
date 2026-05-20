@@ -104,6 +104,26 @@ export default function ArticlePage() {
         >
           Zum Buch auf Amazon
         </a>
+<div
+  style={{
+    marginTop: "60px",
+    paddingTop: "30px",
+    borderTop: "1px solid #222",
+  }}
+>
+  <a
+    href="/blog"
+    style={{
+      display: "inline-block",
+      color: "#D68A1F",
+      textDecoration: "none",
+      fontWeight: 700,
+      fontSize: "18px",
+    }}
+  >
+    ← Zurück zum Blog
+  </a>
+</div>
       </article>
     </main>
   );
