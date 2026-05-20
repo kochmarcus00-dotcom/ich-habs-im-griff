@@ -367,7 +367,36 @@ export default function LandingPage() {
           Jetzt auf Amazon kaufen
         </a>
       </section>
-    </main>
+<footer
+  style={{
+    textAlign: "center",
+    padding: "40px 20px",
+    color: "#888",
+    fontSize: "14px",
+  }}
+>
+  <a
+    href="/impressum"
+    style={{
+      color: "#888",
+      marginRight: "20px",
+      textDecoration: "none",
+    }}
+  >
+    Impressum
+  </a>
+
+  <a
+    href="/datenschutz"
+    style={{
+      color: "#888",
+      textDecoration: "none",
+    }}
+  >
+    Datenschutz
+  </a>
+</footer>    
+</main>
       </>
     </>
   );
