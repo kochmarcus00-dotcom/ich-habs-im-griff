@@ -395,9 +395,9 @@ export default function LandingPage() {
   >
     Datenschutz
   </a>
-</footer>    
+</footer>
+
 </main>
-      </>
     </>
   );
 }
