@@ -1,9 +1,28 @@
 export const metadata = {
-  title: "Ich dachte, ich hab’s im Griff | Alkohol aufhören Buch",
+  title:
+    "Alkohol aufhören Buch | Warum weniger trinken nicht funktioniert",
   description:
-    "Warum weniger trinken nicht funktioniert und wie du wirklich aufhörst. Ehrlich, direkt und ohne Bullshit.",
+    "Alkohol aufhören ohne Rückfall. Warum kontrolliertes Trinken nicht funktioniert und wie du wirklich nüchtern wirst. Ehrlich, direkt und ohne Bullshit.",
+  keywords: [
+    "Alkohol aufhören",
+    "alkoholfrei leben",
+    "Alkoholabhängigkeit",
+    "trocken werden",
+    "nüchtern werden",
+    "kontrolliert trinken",
+    "Alkoholproblem",
+    "Rückfall vermeiden",
+    "Alkohol Buch",
+    "Sucht überwinden",
+  ],
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Ich dachte, ich hab’s im Griff",
+    description:
+      "Warum weniger trinken nicht funktioniert und wie du wirklich aufhörst.",
+    images: ["/book_cover.png"],
   },
 };
 
@@ -11,17 +30,80 @@ export default function LandingPage() {
   return (
     <>
       <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
+
         @keyframes breathe {
           0% { transform: scale(1); }
-          50% { transform: scale(1.06); }
+          50% { transform: scale(1.05); }
           100% { transform: scale(1); }
         }
 
         .breathing-button {
           animation: breathe 2.8s ease-in-out infinite;
-          transform-origin: center;
+        }
+
+        a:hover {
+          opacity: 0.9;
         }
       `}</style>
+
+      {/* BOOK SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Book",
+            name: "Ich dachte, ich hab’s im Griff",
+            author: {
+              "@type": "Person",
+              name: "Marcus Koch",
+            },
+            description:
+              "Warum weniger trinken nicht funktioniert und wie du wirklich aufhörst.",
+            inLanguage: "de",
+          }),
+        }}
+      />
+
+      {/* FAQ SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Wie hört man mit Alkohol auf?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Der wichtigste Schritt ist zu akzeptieren, dass kontrolliertes Trinken oft nicht mehr funktioniert.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Warum funktioniert weniger trinken nicht?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Weil Alkoholabhängigkeit selten bei einem Glas bleibt.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Wie wird man alkoholfrei?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Durch Ehrlichkeit, klare Entscheidungen und dauerhafte Veränderung.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <main
         style={{
@@ -54,7 +136,7 @@ export default function LandingPage() {
                 marginBottom: "16px",
               }}
             >
-              Marcus Koch
+              Alkohol aufhören Buch von Marcus Koch
             </p>
 
             <h1
@@ -80,7 +162,9 @@ export default function LandingPage() {
                 marginBottom: "32px",
               }}
             >
-              Bis Alkohol entschieden hat, dass er mich im Griff hat.
+              Warum weniger trinken nicht funktioniert —
+              <br />
+              und wie du wirklich alkoholfrei wirst.
             </h2>
 
             <p
@@ -88,12 +172,14 @@ export default function LandingPage() {
                 fontSize: "18px",
                 color: "#cfcfcf",
                 marginBottom: "32px",
-                maxWidth: "600px",
+                maxWidth: "650px",
               }}
             >
-              Warum du nicht weniger trinken kannst — und wie du wirklich
-              aufhörst. Kein Therapeut. Kein Experte. Jemand, der selbst dort
-              war. Keine Theorie. Keine Ausreden. Nur die Wahrheit.
+              Alkohol aufhören beginnt nicht mit Motivation.
+              Sondern mit Ehrlichkeit.
+              Dieses Buch zeigt dir, warum kontrolliertes Trinken scheitert,
+              wie Alkoholabhängigkeit entsteht und wie du wirklich nüchtern
+              wirst — ohne Bullshit und ohne leere Motivationssprüche.
             </p>
 
             <a
@@ -112,85 +198,79 @@ export default function LandingPage() {
                 textDecoration: "none",
               }}
             >
-              Ich will da raus
+              Jetzt auf Amazon kaufen
             </a>
           </div>
 
           <div>
             <img
               src="/book_cover.png"
-              alt="Buchcover"
+              alt="Alkohol aufhören Buch von Marcus Koch"
               style={{
                 width: "100%",
                 borderRadius: "20px",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
+                boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
               }}
             />
           </div>
         </section>
 
-        {/* PROBLEM */}
+        {/* SEO SECTION */}
         <section
           style={{
             backgroundColor: "#111111",
-            padding: "80px 24px",
+            padding: "90px 24px",
           }}
         >
           <div
             style={{
-              maxWidth: "900px",
+              maxWidth: "1000px",
               margin: "0 auto",
-              textAlign: "center",
             }}
           >
             <h2
               style={{
-                fontSize: "42px",
-                marginBottom: "30px",
+                fontSize: "48px",
+                marginBottom: "32px",
+                textAlign: "center",
               }}
             >
-              Warum weniger trinken nicht funktioniert
+              Warum Alkohol aufhören so schwer ist
             </h2>
 
             <p
               style={{
-                fontSize: "24px",
+                fontSize: "20px",
                 color: "#d1d5db",
-                marginBottom: "18px",
+                marginBottom: "24px",
               }}
             >
-              „Heute trinke ich weniger.“
+              Viele Menschen glauben, sie könnten Alkohol kontrollieren.
+              Genau dort beginnt das Problem.
             </p>
 
             <p
               style={{
-                fontSize: "24px",
+                fontSize: "20px",
                 color: "#d1d5db",
-                marginBottom: "18px",
+                marginBottom: "24px",
               }}
             >
-              „Nur heute noch.“
+              Alkoholabhängigkeit entsteht oft schleichend:
+              ein Glas am Abend,
+              ein Drink zum Abschalten,
+              ein Ritual gegen Stress.
             </p>
 
             <p
               style={{
-                fontSize: "24px",
+                fontSize: "20px",
                 color: "#d1d5db",
-                marginBottom: "30px",
               }}
             >
-              „Ich hab’s im Griff.“
-            </p>
-
-            <p
-              style={{
-                fontSize: "18px",
-                color: "#bdbdbd",
-              }}
-            >
-              Genau hier beginnt Alkoholabhängigkeit oft: nicht beim ersten
-              Glas, sondern in dem Moment, in dem du glaubst, jederzeit
-              aufhören zu können.
+              Irgendwann geht es nicht mehr um Genuss.
+              Sondern nur noch darum,
+              sich selbst kurz nicht fühlen zu müssen.
             </p>
           </div>
         </section>
@@ -200,155 +280,262 @@ export default function LandingPage() {
           style={{
             maxWidth: "1100px",
             margin: "0 auto",
-            padding: "90px 24px",
+            padding: "100px 24px",
           }}
         >
           <h2
             style={{
-              fontSize: "42px",
-              marginBottom: "30px",
+              fontSize: "48px",
+              marginBottom: "40px",
             }}
           >
-            Dieses Buch hilft dir wirklich
+            Dieses Buch hilft dir beim Alkohol aufhören
           </h2>
 
           <div
             style={{
               display: "grid",
-              gap: "18px",
-              fontSize: "18px",
+              gap: "22px",
+              fontSize: "20px",
               color: "#d1d5db",
             }}
           >
-            <p>• Alkohol kontrollieren funktioniert nicht</p>
-            <p>• Du verstehst deine Trigger</p>
-            <p>• Klarer 7-Tage-Startplan</p>
-            <p>• Notfallplan gegen Rückfälle</p>
-            <p>• Dauerhafte Abstinenz verstehen</p>
+            <p>• Warum kontrolliert trinken meistens scheitert</p>
+            <p>• Wie Alkohol Kontrolle über deinen Alltag übernimmt</p>
+            <p>• Wie du alkoholfrei leben kannst</p>
+            <p>• Wie du Rückfälle vermeidest</p>
+            <p>• Wie du dauerhaft nüchtern wirst</p>
+            <p>• Warum Willenskraft allein nicht reicht</p>
+            <p>• Wie Alkoholabhängigkeit wirklich funktioniert</p>
           </div>
         </section>
 
         {/* AUTHOR */}
         <section
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-            padding: "90px 24px",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "50px",
-            alignItems: "center",
+            backgroundColor: "#111111",
+            padding: "100px 24px",
           }}
         >
-          <div>
-            <img
-              src="/mk1974.png"
-              alt="Marcus Koch"
-              style={{
-                width: "100%",
-                borderRadius: "24px",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
-              }}
-            />
-          </div>
+          <div
+            style={{
+              maxWidth: "1100px",
+              margin: "0 auto",
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "50px",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/mk1974.png"
+                alt="Marcus Koch Autor"
+                style={{
+                  width: "100%",
+                  borderRadius: "24px",
+                  boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
+                }}
+              />
+            </div>
 
-          <div>
-            <p
-              style={{
-                color: "#D68A1F",
-                textTransform: "uppercase",
-                letterSpacing: "3px",
-                fontSize: "14px",
-                marginBottom: "12px",
-              }}
-            >
-              Der Autor
-            </p>
+            <div>
+              <p
+                style={{
+                  color: "#D68A1F",
+                  textTransform: "uppercase",
+                  letterSpacing: "3px",
+                  fontSize: "14px",
+                  marginBottom: "12px",
+                }}
+              >
+                Der Autor
+              </p>
 
-            <h2
-              style={{
-                fontSize: "42px",
-                marginBottom: "20px",
-              }}
-            >
-              Kein Therapeut.
-              <br />
-              Kein Experte.
-              <br />
-              Jemand, der selbst dort war.
-            </h2>
+              <h2
+                style={{
+                  fontSize: "48px",
+                  marginBottom: "24px",
+                }}
+              >
+                Kein Therapeut.
+                <br />
+                Kein Experte.
+                <br />
+                Jemand, der selbst dort war.
+              </h2>
 
-            <p
-              style={{
-                fontSize: "18px",
-                color: "#d1d5db",
-              }}
-            >
-              Dieses Buch ist keine Theorie. Es ist die Wahrheit eines
-              Menschen, der selbst fast daran zerbrochen wäre.
-            </p>
+              <p
+                style={{
+                  fontSize: "20px",
+                  color: "#d1d5db",
+                  marginBottom: "20px",
+                }}
+              >
+                Dieses Buch über Alkohol aufhören ist keine Theorie.
+              </p>
+
+              <p
+                style={{
+                  fontSize: "20px",
+                  color: "#d1d5db",
+                }}
+              >
+                Es ist die Wahrheit eines Menschen,
+                der selbst fast an Alkohol zerbrochen wäre —
+                und verstanden hat,
+                warum weniger trinken niemals funktioniert hat.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* FINAL CTA */}
+        {/* FAQ */}
         <section
-          id="kaufen"
           style={{
-            textAlign: "center",
             padding: "100px 24px",
-            maxWidth: "900px",
+            maxWidth: "1000px",
             margin: "0 auto",
           }}
         >
           <h2
             style={{
-              fontSize: "clamp(40px, 6vw, 68px)",
-              marginBottom: "24px",
+              fontSize: "48px",
+              marginBottom: "50px",
+              textAlign: "center",
             }}
           >
-            Du musst nicht perfekt sein.
-            <br />
-            Du musst nur anfangen.
+            Häufige Fragen zum Alkohol aufhören
           </h2>
 
-          <p
+          <div
             style={{
-              fontSize: "28px",
-              color: "#D68A1F",
-              marginBottom: "32px",
+              display: "grid",
+              gap: "36px",
             }}
           >
-            Heute.
-          </p>
+            <div>
+              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+                Wie hört man mit Alkohol auf?
+              </h3>
 
-          <a
-            className="breathing-button"
-            href="https://www.amazon.de/dp/B0GH8RX7W6"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              backgroundColor: "#D68A1F",
-              color: "black",
-              padding: "20px 40px",
-              borderRadius: "16px",
-              fontWeight: 800,
-              fontSize: "20px",
-              textDecoration: "none",
-            }}
-          >
-            Jetzt auf Amazon kaufen
-          </a>
+              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+                Der wichtigste Schritt ist Ehrlichkeit.
+                Viele Menschen versuchen jahrelang kontrolliert zu trinken,
+                obwohl genau das nicht mehr funktioniert.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+                Warum funktioniert weniger trinken nicht?
+              </h3>
+
+              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+                Weil Alkoholabhängigkeit selten bei einem Glas bleibt.
+                Der Kampf beginnt oft erst nach dem ersten Schluck.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+                Wie wird man alkoholfrei?
+              </h3>
+
+              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+                Dauerhafte Abstinenz beginnt mit einer klaren Entscheidung —
+                nicht mit Motivation.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+                Wann ist man alkoholabhängig?
+              </h3>
+
+              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+                Wenn Alkohol deinen Alltag kontrolliert,
+                deine Gedanken bestimmt
+                oder du ständig versuchst weniger zu trinken.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+                Wie vermeidet man Rückfälle?
+              </h3>
+
+              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+                Rückfälle vermeidet man nicht mit Disziplin —
+                sondern mit neuen Gewohnheiten,
+                Ehrlichkeit und klaren Entscheidungen.
+              </p>
+            </div>
+          </div>
         </section>
 
-        {/* FOOTER SPACING */}
-        <div style={{ height: "120px" }} />
+        {/* FINAL CTA */}
+        <section
+          style={{
+            textAlign: "center",
+            padding: "120px 24px",
+            backgroundColor: "#111111",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "900px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "clamp(42px, 6vw, 72px)",
+                marginBottom: "24px",
+              }}
+            >
+              Du musst nicht perfekt sein.
+              <br />
+              Du musst nur anfangen.
+            </h2>
+
+            <p
+              style={{
+                fontSize: "30px",
+                color: "#D68A1F",
+                marginBottom: "40px",
+              }}
+            >
+              Heute.
+            </p>
+
+            <a
+              className="breathing-button"
+              href="https://www.amazon.de/dp/B0GH8RX7W6"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                backgroundColor: "#D68A1F",
+                color: "black",
+                padding: "22px 44px",
+                borderRadius: "18px",
+                fontWeight: 800,
+                fontSize: "22px",
+                textDecoration: "none",
+              }}
+            >
+              Jetzt auf Amazon kaufen
+            </a>
+          </div>
+        </section>
 
         {/* FOOTER */}
         <footer
           style={{
             textAlign: "center",
-            padding: "40px 20px 80px",
+            padding: "50px 20px",
             color: "#888",
             fontSize: "14px",
             borderTop: "1px solid #1f1f1f",
