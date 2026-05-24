@@ -3,8 +3,21 @@ export default function sitemap() {
     {
       url: "https://www.ich-habs-im-griff.de",
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+    },
+
+    {
+      url: "https://www.ich-habs-im-griff.de/blog",
+      lastModified: new Date(),
+    },
+
+    {
+      url: "https://www.ich-habs-im-griff.de/impressum",
+      lastModified: new Date(),
+    },
+
+    {
+      url: "https://www.ich-habs-im-griff.de/datenschutz",
+      lastModified: new Date(),
     },
   ];
 }
