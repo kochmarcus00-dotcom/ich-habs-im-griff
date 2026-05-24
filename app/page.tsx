@@ -129,7 +129,7 @@ export default function HomePage() {
     objectFit: "contain",
     borderRadius: "28px",
     boxShadow: "0 20px 80px rgba(0,0,0,0.65)",
-    display: "block",
+    transform: "translateY(55px)",
     margin: "0 auto",
   }}
 >
