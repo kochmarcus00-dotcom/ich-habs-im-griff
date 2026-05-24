@@ -21,106 +21,127 @@ export default function HomePage() {
         {/* HERO */}
 
         <section
-          style={{
-            maxWidth: "1400px",
-            margin: "0 auto",
-            padding: "80px 40px",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "80px",
-            alignItems: "center",
-          }}
-        >
-          {/* LEFT */}
+  style={{
+    maxWidth: "1400px",
+    margin: "0 auto",
+    padding: "40px 20px",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gap: "50px",
+    alignItems: "center",
+  }}
+>
+  {/* LEFT */}
 
-          <div>
-            <h1
-              style={{
-                fontSize:
-  typeof window !== "undefined" &&
-  window.innerWidth < 900
-    ? "64px"
-    : "clamp(42px, 6vw, 82px)",
-                lineHeight: 0.95,
-                fontWeight: 900,
-                marginBottom: "40px",
-              }}
-            >
-              Ich dachte,
-              <br />
-              ich hab’s
-              <br />
-              im Griff.
-            </h1>
+  <div>
+    <h1
+      style={{
+        fontSize: "clamp(52px, 12vw, 92px)",
+        lineHeight: 0.95,
+        fontWeight: 900,
+        marginBottom: "30px",
+      }}
+    >
+      Ich dachte,
+      <br />
+      ich hab’s
+      <br />
+      im Griff.
+    </h1>
 
-            <h2
-              style={{
-                fontSize: "clamp(24px, 3vw, 42px)",
-                fontWeight: 400,
-                lineHeight: 1.3,
-                color: "#e5e5e5",
-                marginBottom: "40px",
-              }}
-            >
-              Warum weniger trinken nicht funktioniert —
-              <br />
-              und wie du wirklich alkoholfrei wirst.
-            </h2>
+```
+<h2
+  style={{
+    fontSize: "clamp(24px, 5vw, 42px)",
+    fontWeight: 400,
+    lineHeight: 1.3,
+    color: "#e5e5e5",
+    marginBottom: "30px",
+  }}
+>
+  Warum weniger trinken nicht funktioniert —
+  <br />
+  und wie du wirklich alkoholfrei wirst.
+</h2>
 
-            <p
-              style={{
-                fontSize: "22px",
-                lineHeight: 1.8,
-                color: "#cfcfcf",
-                maxWidth: "760px",
-                marginBottom: "50px",
-              }}
-            >
-              Alkohol aufhören beginnt nicht mit Motivation.
-              Sondern mit Ehrlichkeit.
-              <br />
-              <br />
-              Dieses Buch zeigt dir,
-              warum kontrolliertes Trinken scheitert,
-              warum Alkoholabhängigkeit schleichend entsteht
-              und warum weniger trinken irgendwann nicht mehr funktioniert.
-              <br />
-              <br />
-              Ohne Bullshit.
-              <br />
-              Ohne Motivationsgelaber.
-              <br />
-              Sondern ehrlich.
-            </p>
+<p
+  style={{
+    fontSize: "clamp(18px, 2vw, 22px)",
+    lineHeight: 1.8,
+    color: "#cfcfcf",
+    marginBottom: "40px",
+  }}
+>
+  Alkohol aufhören beginnt nicht mit Motivation.
+  Sondern mit Ehrlichkeit.
+  <br />
+  <br />
+  Dieses Buch zeigt dir,
+  warum kontrolliertes Trinken scheitert,
+  warum Alkoholabhängigkeit schleichend entsteht
+  und warum weniger trinken irgendwann nicht mehr funktioniert.
+  <br />
+  <br />
+  Ohne Bullshit.
+  <br />
+  Ohne Motivationsgelaber.
+  <br />
+  Sondern ehrlich.
+</p>
 
-            <a
-              href="https://www.amazon.de/dp/B0GH8RX7W6"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-block",
-                backgroundColor: "#D68A1F",
-                color: "black",
-                padding: "22px 42px",
-                borderRadius: "18px",
-                fontSize: "22px",
-                fontWeight: 800,
-                textDecoration: "none",
-              }}
-            >
-              Jetzt auf Amazon kaufen
-            </a>
-          </div>
+<a
+  href="https://www.amazon.de/dp/B0GH8RX7W6"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-block",
+    backgroundColor: "#D68A1F",
+    color: "black",
+    padding: "20px 38px",
+    borderRadius: "18px",
+    fontSize: "20px",
+    fontWeight: 800,
+    textDecoration: "none",
+  }}
+>
+  Jetzt auf Amazon kaufen
+</a>
+```
 
-          {/* RIGHT VIDEO */}
+  </div>
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+{/* RIGHT */}
+
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      style={{
+        width: "100%",
+        maxWidth: "720px",
+        height: "auto",
+        borderRadius: "28px",
+        objectFit: "contain",
+        boxShadow:
+          "0 20px 80px rgba(0,0,0,0.65)",
+      }}
+    >
+      <source
+        src="/glass-loop.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</section>
+
             <video
   autoPlay
   muted
