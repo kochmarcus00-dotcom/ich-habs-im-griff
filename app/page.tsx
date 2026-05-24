@@ -26,7 +26,7 @@ export default function HomePage() {
             margin: "0 auto",
             padding: "80px 40px",
             display: "grid",
-            gridTemplateColumns: "1.1fr 0.9fr",
+            gridTemplateColumns: "1fr 1fr",
             gap: "80px",
             alignItems: "center",
           }}
@@ -118,24 +118,26 @@ export default function HomePage() {
             }}
           >
             <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{
-                width: "100%",
-                maxWidth: "540px",
-                objectFit: "contain",
-                borderRadius: "28px",
-                boxShadow:
-                  "0 20px 80px rgba(0,0,0,0.65)",
-              }}
-            >
-              <source
-                src="/glass-loop.mp4"
-                type="video/mp4"
-              />
-            </video>
+  autoPlay
+  muted
+  loop
+  playsInline
+  style={{
+    width: "92%",
+    maxWidth: "620px",
+    height: "auto",
+    objectFit: "contain",
+    borderRadius: "28px",
+    boxShadow: "0 20px 80px rgba(0,0,0,0.65)",
+    display: "block",
+    margin: "0 auto",
+  }}
+>
+  <source
+    src="/glass-loop.mp4"
+    type="video/mp4"
+  />
+</video>
           </div>
         </section>
 
@@ -219,7 +221,7 @@ export default function HomePage() {
                 src="/mk1974.png"
                 alt="Marcus Koch"
                 style={{
-                  width: "100%",
+                 width: "92%",
                   borderRadius: "24px",
                 }}
               />
