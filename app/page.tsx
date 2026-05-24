@@ -169,15 +169,21 @@ export default function HomePage() {
           </div>
 
           <div>
-            <img
-              src="/book_cover.png"
-              alt="Alkohol aufhören Buch von Marcus Koch"
-              style={{
-                width: "100%",
-                borderRadius: "20px",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
-              }}
-            />
+            <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  style={{
+    width: "85%",
+    margin: "0 auto",
+    display: "block",
+    borderRadius: "20px",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
+  }}
+>
+  <source src="/glass-loop.mp4" type="video/mp4" />
+</video>
           </div>
         </section>
 
