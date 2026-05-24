@@ -33,7 +33,12 @@ export default function HomePage() {
 >
   {/* LEFT */}
 
-  <div>
+<div
+  style={{
+    width: "100%",
+    maxWidth: "720px",
+  }}
+>
     <h1
       style={{
         fontSize: "clamp(52px, 12vw, 92px)",
@@ -66,7 +71,7 @@ export default function HomePage() {
 
 <p
   style={{
-    fontSize: "clamp(18px, 2vw, 22px)",
+    fontSize: "clamp(18px, 4vw, 22px)",
     lineHeight: 1.8,
     color: "#cfcfcf",
     marginBottom: "40px",
@@ -264,10 +269,15 @@ export default function HomePage() {
               />
             </div>
 
-            <div>
-              <p
-                style={{
-                  color: "#D68A1F",
+            <div
+  style={{
+    width: "100%",
+    maxWidth: "720px",
+  }}
+>
+  <p
+    style={{
+      color: "#D68A1F",
                   textTransform: "uppercase",
                   letterSpacing: "4px",
                   fontSize: "15px",
@@ -279,7 +289,7 @@ export default function HomePage() {
 
               <h2
                 style={{
-                  fontSize: "58px",
+                  fontSize: "clamp(34px, 8vw, 58px)",
                   lineHeight: 1.1,
                   marginBottom: "30px",
                 }}
@@ -295,7 +305,7 @@ export default function HomePage() {
 
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: "clamp(18px, 4vw, 24px)",
                   color: "#d1d5db",
                   lineHeight: 1.8,
                 }}
