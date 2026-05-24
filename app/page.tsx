@@ -3,104 +3,43 @@ export const metadata = {
     "Alkohol aufhören Buch | Warum weniger trinken nicht funktioniert",
 
   description:
-    "Alkohol aufhören ohne Rückfall. Warum kontrolliertes Trinken nicht funktioniert und wie du wirklich alkoholfrei wirst. Ehrlich, direkt und ohne Bullshit.",
+    "Alkohol aufhören ohne Rückfall. Warum kontrolliertes Trinken nicht funktioniert und wie du wirklich alkoholfrei wirst.",
 };
 
 export default function HomePage() {
   return (
     <>
-      {/* FAQ SCHEMA */}
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Wie hört man mit Alkohol auf?",
-
-                acceptedAnswer: {
-                  "@type": "Answer",
-
-                  text:
-                    "Der wichtigste Schritt ist Ehrlichkeit. Viele Menschen versuchen jahrelang kontrolliert zu trinken, obwohl genau das nicht mehr funktioniert.",
-                },
-              },
-
-              {
-                "@type": "Question",
-                name: "Warum funktioniert weniger trinken nicht?",
-
-                acceptedAnswer: {
-                  "@type": "Answer",
-
-                  text:
-                    "Weil Alkoholabhängigkeit selten bei einem Glas bleibt. Der Kampf beginnt oft erst nach dem ersten Schluck.",
-                },
-              },
-
-              {
-                "@type": "Question",
-                name: "Wie wird man alkoholfrei?",
-
-                acceptedAnswer: {
-                  "@type": "Answer",
-
-                  text:
-                    "Dauerhafte Abstinenz beginnt mit einer klaren Entscheidung — nicht mit Motivation.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       <main
         style={{
           minHeight: "100vh",
-          backgroundColor: "#0B0B0B",
+          backgroundColor: "#050505",
           color: "white",
           fontFamily: "Arial, sans-serif",
-          lineHeight: 1.6,
+          overflow: "hidden",
         }}
       >
         {/* HERO */}
 
         <section
           style={{
-            maxWidth: "1200px",
+            maxWidth: "1400px",
             margin: "0 auto",
-            padding: "80px 24px",
+            padding: "80px 40px",
             display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "60px",
+            gridTemplateColumns: "1.1fr 0.9fr",
+            gap: "80px",
             alignItems: "center",
           }}
         >
-          <div>
-            <p
-              style={{
-                color: "#D68A1F",
-                textTransform: "uppercase",
-                letterSpacing: "3px",
-                fontSize: "14px",
-                marginBottom: "16px",
-              }}
-            >
-              Alkohol aufhören Buch von Marcus Koch
-            </p>
+          {/* LEFT */}
 
+          <div>
             <h1
               style={{
-                fontSize: "clamp(42px, 7vw, 82px)",
+                fontSize: "clamp(58px, 8vw, 110px)",
+                lineHeight: 0.95,
                 fontWeight: 900,
-                lineHeight: 1.05,
-                marginBottom: "24px",
+                marginBottom: "40px",
               }}
             >
               Ich dachte,
@@ -112,10 +51,11 @@ export default function HomePage() {
 
             <h2
               style={{
-                fontSize: "clamp(20px, 3vw, 32px)",
+                fontSize: "clamp(24px, 3vw, 42px)",
                 fontWeight: 400,
-                color: "#d1d5db",
-                marginBottom: "32px",
+                lineHeight: 1.3,
+                color: "#e5e5e5",
+                marginBottom: "40px",
               }}
             >
               Warum weniger trinken nicht funktioniert —
@@ -125,10 +65,11 @@ export default function HomePage() {
 
             <p
               style={{
-                fontSize: "18px",
+                fontSize: "22px",
+                lineHeight: 1.8,
                 color: "#cfcfcf",
-                marginBottom: "32px",
-                maxWidth: "650px",
+                maxWidth: "760px",
+                marginBottom: "50px",
               }}
             >
               Alkohol aufhören beginnt nicht mit Motivation.
@@ -149,7 +90,6 @@ export default function HomePage() {
             </p>
 
             <a
-              className="breathing-button"
               href="https://www.amazon.de/dp/B0GH8RX7W6"
               target="_blank"
               rel="noopener noreferrer"
@@ -157,10 +97,10 @@ export default function HomePage() {
                 display: "inline-block",
                 backgroundColor: "#D68A1F",
                 color: "black",
-                padding: "18px 34px",
-                borderRadius: "16px",
-                fontWeight: 700,
-                fontSize: "18px",
+                padding: "22px 42px",
+                borderRadius: "18px",
+                fontSize: "22px",
+                fontWeight: 800,
                 textDecoration: "none",
               }}
             >
@@ -168,83 +108,34 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div>
-            <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  style={{
-    width: "85%",
-    margin: "0 auto",
-    display: "block",
-    borderRadius: "20px",
-    boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
-  }}
->
-  <source src="/glass-loop.mp4" type="video/mp4" />
-</video>
-          </div>
-        </section>
+          {/* RIGHT VIDEO */}
 
-        {/* SEO SECTION */}
-
-        <section
-          style={{
-            backgroundColor: "#111111",
-            padding: "90px 24px",
-          }}
-        >
           <div
             style={{
-              maxWidth: "1000px",
-              margin: "0 auto",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <h2
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
               style={{
-                fontSize: "48px",
-                marginBottom: "32px",
-                textAlign: "center",
+                width: "100%",
+                maxWidth: "540px",
+                objectFit: "contain",
+                borderRadius: "28px",
+                boxShadow:
+                  "0 20px 80px rgba(0,0,0,0.65)",
               }}
             >
-              Warum Alkohol aufhören so schwer ist
-            </h2>
-
-            <p
-              style={{
-                fontSize: "20px",
-                color: "#d1d5db",
-                marginBottom: "24px",
-              }}
-            >
-              Viele Menschen glauben, sie könnten Alkohol kontrollieren.
-              Genau dort beginnt das Problem.
-            </p>
-
-            <p
-              style={{
-                fontSize: "20px",
-                color: "#d1d5db",
-                marginBottom: "24px",
-              }}
-            >
-              Alkoholabhängigkeit entsteht oft schleichend:
-              ein Glas am Abend,
-              ein Drink zum Abschalten,
-              ein Ritual gegen Stress.
-            </p>
-
-            <p
-              style={{
-                fontSize: "20px",
-                color: "#d1d5db",
-              }}
-            >
-              Irgendwann geht es nicht mehr um Genuss.
-              Sondern nur noch darum,
-              sich selbst kurz nicht fühlen zu müssen.
-            </p>
+              <source
+                src="/glass-loop.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </section>
 
@@ -254,13 +145,13 @@ export default function HomePage() {
           style={{
             maxWidth: "1100px",
             margin: "0 auto",
-            padding: "100px 24px",
+            padding: "120px 40px",
           }}
         >
           <h2
             style={{
-              fontSize: "48px",
-              marginBottom: "40px",
+              fontSize: "58px",
+              marginBottom: "50px",
             }}
           >
             Dieses Buch hilft dir beim Alkohol aufhören
@@ -269,9 +160,10 @@ export default function HomePage() {
           <div
             style={{
               display: "grid",
-              gap: "22px",
-              fontSize: "20px",
+              gap: "28px",
+              fontSize: "24px",
               color: "#d1d5db",
+              lineHeight: 1.6,
             }}
           >
             <p>• warum kontrolliertes Trinken scheitert</p>
@@ -280,7 +172,9 @@ export default function HomePage() {
               • warum Alkohol nie wirklich das eigentliche Problem war
             </p>
 
-            <p>• wie Alkohol langsam Kontrolle übernimmt</p>
+            <p>
+              • wie Alkohol langsam Kontrolle übernimmt
+            </p>
 
             <p>
               • warum Rückfälle nicht aus Schwäche entstehen
@@ -306,30 +200,27 @@ export default function HomePage() {
 
         <section
           style={{
-            backgroundColor: "#111111",
-            padding: "100px 24px",
+            backgroundColor: "#0d0d0d",
+            padding: "120px 40px",
           }}
         >
           <div
             style={{
-              maxWidth: "1100px",
+              maxWidth: "1200px",
               margin: "0 auto",
               display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: "50px",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "70px",
               alignItems: "center",
             }}
           >
             <div>
               <img
                 src="/mk1974.png"
-                alt="Marcus Koch Autor"
+                alt="Marcus Koch"
                 style={{
                   width: "100%",
                   borderRadius: "24px",
-                  boxShadow:
-                    "0 20px 60px rgba(0,0,0,0.45)",
                 }}
               />
             </div>
@@ -339,9 +230,9 @@ export default function HomePage() {
                 style={{
                   color: "#D68A1F",
                   textTransform: "uppercase",
-                  letterSpacing: "3px",
-                  fontSize: "14px",
-                  marginBottom: "12px",
+                  letterSpacing: "4px",
+                  fontSize: "15px",
+                  marginBottom: "16px",
                 }}
               >
                 Der Autor
@@ -349,20 +240,23 @@ export default function HomePage() {
 
               <h2
                 style={{
-                  fontSize: "48px",
-                  marginBottom: "24px",
+                  fontSize: "58px",
+                  lineHeight: 1.1,
+                  marginBottom: "30px",
                 }}
               >
                 Kein Therapeut.
                 <br />
                 Kein Experte.
                 <br />
-                Kein Mensch mit perfekten Antworten.
+                Kein Mensch
+                <br />
+                mit perfekten Antworten.
               </h2>
 
               <p
                 style={{
-                  fontSize: "20px",
+                  fontSize: "24px",
                   color: "#d1d5db",
                   lineHeight: 1.8,
                 }}
@@ -387,32 +281,32 @@ export default function HomePage() {
 
         <section
           style={{
-            padding: "100px 24px",
-            maxWidth: "1000px",
+            maxWidth: "1100px",
             margin: "0 auto",
+            padding: "120px 40px",
           }}
         >
           <h2
             style={{
-              fontSize: "48px",
-              marginBottom: "50px",
+              fontSize: "58px",
+              marginBottom: "70px",
               textAlign: "center",
             }}
           >
-            Häufige Fragen zum Alkohol aufhören
+            Häufige Fragen
           </h2>
 
           <div
             style={{
               display: "grid",
-              gap: "36px",
+              gap: "50px",
             }}
           >
             <div>
               <h3
                 style={{
-                  fontSize: "28px",
-                  marginBottom: "10px",
+                  fontSize: "34px",
+                  marginBottom: "16px",
                 }}
               >
                 Wie hört man mit Alkohol auf?
@@ -421,7 +315,8 @@ export default function HomePage() {
               <p
                 style={{
                   color: "#cfcfcf",
-                  fontSize: "18px",
+                  fontSize: "22px",
+                  lineHeight: 1.7,
                 }}
               >
                 Der wichtigste Schritt ist Ehrlichkeit.
@@ -434,8 +329,8 @@ export default function HomePage() {
             <div>
               <h3
                 style={{
-                  fontSize: "28px",
-                  marginBottom: "10px",
+                  fontSize: "34px",
+                  marginBottom: "16px",
                 }}
               >
                 Warum funktioniert weniger trinken nicht?
@@ -444,7 +339,8 @@ export default function HomePage() {
               <p
                 style={{
                   color: "#cfcfcf",
-                  fontSize: "18px",
+                  fontSize: "22px",
+                  lineHeight: 1.7,
                 }}
               >
                 Weil Alkoholabhängigkeit selten bei einem Glas bleibt.
@@ -455,29 +351,8 @@ export default function HomePage() {
             <div>
               <h3
                 style={{
-                  fontSize: "28px",
-                  marginBottom: "10px",
-                }}
-              >
-                Wie wird man alkoholfrei?
-              </h3>
-
-              <p
-                style={{
-                  color: "#cfcfcf",
-                  fontSize: "18px",
-                }}
-              >
-                Dauerhafte Abstinenz beginnt mit einer klaren Entscheidung —
-                nicht mit Motivation.
-              </p>
-            </div>
-
-            <div>
-              <h3
-                style={{
-                  fontSize: "28px",
-                  marginBottom: "10px",
+                  fontSize: "34px",
+                  marginBottom: "16px",
                 }}
               >
                 Wann ist man alkoholabhängig?
@@ -486,7 +361,8 @@ export default function HomePage() {
               <p
                 style={{
                   color: "#cfcfcf",
-                  fontSize: "18px",
+                  fontSize: "22px",
+                  lineHeight: 1.7,
                 }}
               >
                 Wenn du ständig darüber nachdenkst,
@@ -494,91 +370,105 @@ export default function HomePage() {
                 und es trotzdem nicht wirklich schaffst.
               </p>
             </div>
-
-            <div>
-              <h3
-                style={{
-                  fontSize: "28px",
-                  marginBottom: "10px",
-                }}
-              >
-                Wie vermeidet man Rückfälle?
-              </h3>
-
-              <p
-                style={{
-                  color: "#cfcfcf",
-                  fontSize: "18px",
-                }}
-              >
-                Rückfälle vermeidet man nicht mit Disziplin —
-                sondern mit neuen Gewohnheiten,
-                Ehrlichkeit und klaren Entscheidungen.
-              </p>
-            </div>
           </div>
         </section>
 
-        {/* FINAL CTA */}
+        {/* CTA */}
 
         <section
           style={{
             textAlign: "center",
-            padding: "120px 24px",
-            backgroundColor: "#111111",
+            padding: "140px 40px",
+            backgroundColor: "#0d0d0d",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "clamp(52px, 7vw, 92px)",
+              lineHeight: 1.1,
+              marginBottom: "40px",
+            }}
+          >
+            Freiheit beginnt oft
+            <br />
+            in dem Moment,
+            <br />
+            in dem du aufhörst,
+            <br />
+            dich selbst zu belügen.
+          </h2>
+
+          <a
+            href="https://www.amazon.de/dp/B0GH8RX7W6"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              backgroundColor: "#D68A1F",
+              color: "black",
+              padding: "24px 50px",
+              borderRadius: "20px",
+              fontSize: "24px",
+              fontWeight: 800,
+              textDecoration: "none",
+              marginTop: "30px",
+            }}
+          >
+            Jetzt auf Amazon kaufen
+          </a>
+        </section>
+
+        {/* FOOTER */}
+
+        <footer
+          style={{
+            padding: "40px",
+            borderTop: "1px solid #1f1f1f",
+            textAlign: "center",
           }}
         >
           <div
             style={{
-              maxWidth: "900px",
-              margin: "0 auto",
+              display: "flex",
+              justifyContent: "center",
+              gap: "30px",
+              flexWrap: "wrap",
             }}
           >
-            <h2
+            <a
+              href="/blog"
               style={{
-                fontSize: "clamp(42px, 6vw, 72px)",
-                marginBottom: "24px",
+                color: "#cfcfcf",
+                textDecoration: "none",
+                fontSize: "18px",
               }}
             >
-              Freiheit beginnt oft
-              <br />
-              in dem Moment,
-              <br />
-              in dem du aufhörst,
-              <br />
-              dich selbst zu belügen.
-            </h2>
-
-            <p
-              style={{
-                fontSize: "30px",
-                color: "#D68A1F",
-                marginBottom: "40px",
-              }}
-            >
-              Heute.
-            </p>
+              Blog
+            </a>
 
             <a
-              className="breathing-button"
-              href="https://www.amazon.de/dp/B0GH8RX7W6"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/impressum"
               style={{
-                display: "inline-block",
-                backgroundColor: "#D68A1F",
-                color: "black",
-                padding: "22px 44px",
-                borderRadius: "18px",
-                fontWeight: 800,
-                fontSize: "22px",
+                color: "#cfcfcf",
                 textDecoration: "none",
+                fontSize: "18px",
               }}
             >
-              Jetzt auf Amazon kaufen
+              Impressum
+            </a>
+
+            <a
+              href="/datenschutz"
+              style={{
+                color: "#cfcfcf",
+                textDecoration: "none",
+                fontSize: "18px",
+              }}
+            >
+              Datenschutz
             </a>
           </div>
-        </section>
+        </footer>
       </main>
     </>
   );
