@@ -36,7 +36,11 @@ export default function HomePage() {
           <div>
             <h1
               style={{
-                fontSize: "clamp(42px, 6vw, 82px)",
+                fontSize:
+  typeof window !== "undefined" &&
+  window.innerWidth < 900
+    ? "64px"
+    : "clamp(42px, 6vw, 82px)",
                 lineHeight: 0.95,
                 fontWeight: 900,
                 marginBottom: "40px",
@@ -123,13 +127,21 @@ export default function HomePage() {
   loop
   playsInline
   style={{
-    width: "92%",
+    width:
+  typeof window !== "undefined" &&
+  window.innerWidth < 900
+    ? "100%"
+    : "92%",
     maxWidth: "720px",
     height: "auto",
     objectFit: "contain",
     borderRadius: "28px",
     boxShadow: "0 20px 80px rgba(0,0,0,0.65)",
-    transform: "translateY(55px)",
+    transform:
+  typeof window !== "undefined" &&
+  window.innerWidth < 900
+    ? "translateY(0px)"
+    : "translateY(55px)",
     margin: "0 auto",
   }}
 >
@@ -211,7 +223,11 @@ export default function HomePage() {
               maxWidth: "1200px",
               margin: "0 auto",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns:
+  typeof window !== "undefined" &&
+  window.innerWidth < 900
+    ? "1fr"
+    : "1fr 1fr",
               gap: "70px",
               alignItems: "start",
             }}
@@ -317,7 +333,11 @@ export default function HomePage() {
               <p
                 style={{
                   color: "#cfcfcf",
-                  fontSize: "22px",
+                  fontSize:
+  typeof window !== "undefined" &&
+  window.innerWidth < 900
+    ? "18px"
+    : "22px",
                   lineHeight: 1.7,
                 }}
               >
