@@ -1,103 +1,57 @@
 export const metadata = {
   title:
     "Alkohol aufhören Buch | Warum weniger trinken nicht funktioniert",
+
   description:
-    "Alkohol aufhören ohne Rückfall. Warum kontrolliertes Trinken nicht funktioniert und wie du wirklich nüchtern wirst. Ehrlich, direkt und ohne Bullshit.",
-  keywords: [
-    "Alkohol aufhören",
-    "alkoholfrei leben",
-    "Alkoholabhängigkeit",
-    "trocken werden",
-    "nüchtern werden",
-    "kontrolliert trinken",
-    "Alkoholproblem",
-    "Rückfall vermeiden",
-    "Alkohol Buch",
-    "Sucht überwinden",
-  ],
-  icons: {
-    icon: "/favicon.ico",
-  },
-  openGraph: {
-    title: "Ich dachte, ich hab’s im Griff",
-    description:
-      "Warum weniger trinken nicht funktioniert und wie du wirklich aufhörst.",
-    images: ["/book_cover.png"],
-  },
+    "Alkohol aufhören ohne Rückfall. Warum kontrolliertes Trinken nicht funktioniert und wie du wirklich alkoholfrei wirst. Ehrlich, direkt und ohne Bullshit.",
 };
 
-export default function LandingPage() {
+export default function HomePage() {
   return (
     <>
-      <style>{`
-        html {
-          scroll-behavior: smooth;
-        }
-
-        @keyframes breathe {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-          100% { transform: scale(1); }
-        }
-
-        .breathing-button {
-          animation: breathe 2.8s ease-in-out infinite;
-        }
-
-        a:hover {
-          opacity: 0.9;
-        }
-      `}</style>
-
-      {/* BOOK SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Book",
-            name: "Ich dachte, ich hab’s im Griff",
-            author: {
-              "@type": "Person",
-              name: "Marcus Koch",
-            },
-            description:
-              "Warum weniger trinken nicht funktioniert und wie du wirklich aufhörst.",
-            inLanguage: "de",
-          }),
-        }}
-      />
-
       {/* FAQ SCHEMA */}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+
             mainEntity: [
               {
                 "@type": "Question",
                 name: "Wie hört man mit Alkohol auf?",
+
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Der wichtigste Schritt ist zu akzeptieren, dass kontrolliertes Trinken oft nicht mehr funktioniert.",
+
+                  text:
+                    "Der wichtigste Schritt ist Ehrlichkeit. Viele Menschen versuchen jahrelang kontrolliert zu trinken, obwohl genau das nicht mehr funktioniert.",
                 },
               },
+
               {
                 "@type": "Question",
                 name: "Warum funktioniert weniger trinken nicht?",
+
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Weil Alkoholabhängigkeit selten bei einem Glas bleibt.",
+
+                  text:
+                    "Weil Alkoholabhängigkeit selten bei einem Glas bleibt. Der Kampf beginnt oft erst nach dem ersten Schluck.",
                 },
               },
+
               {
                 "@type": "Question",
                 name: "Wie wird man alkoholfrei?",
+
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Durch Ehrlichkeit, klare Entscheidungen und dauerhafte Veränderung.",
+
+                  text:
+                    "Dauerhafte Abstinenz beginnt mit einer klaren Entscheidung — nicht mit Motivation.",
                 },
               },
             ],
@@ -115,13 +69,15 @@ export default function LandingPage() {
         }}
       >
         {/* HERO */}
+
         <section
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
             padding: "80px 24px",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(320px, 1fr))",
             gap: "60px",
             alignItems: "center",
           }}
@@ -177,9 +133,19 @@ export default function LandingPage() {
             >
               Alkohol aufhören beginnt nicht mit Motivation.
               Sondern mit Ehrlichkeit.
-              Dieses Buch zeigt dir, warum kontrolliertes Trinken scheitert,
-              wie Alkoholabhängigkeit entsteht und wie du wirklich nüchtern
-              wirst — ohne Bullshit und ohne leere Motivationssprüche.
+              <br />
+              <br />
+              Dieses Buch zeigt dir,
+              warum kontrolliertes Trinken scheitert,
+              warum Alkoholabhängigkeit schleichend entsteht
+              und warum weniger trinken irgendwann nicht mehr funktioniert.
+              <br />
+              <br />
+              Ohne Bullshit.
+              <br />
+              Ohne Motivationsgelaber.
+              <br />
+              Sondern ehrlich.
             </p>
 
             <a
@@ -216,6 +182,7 @@ export default function LandingPage() {
         </section>
 
         {/* SEO SECTION */}
+
         <section
           style={{
             backgroundColor: "#111111",
@@ -276,6 +243,7 @@ export default function LandingPage() {
         </section>
 
         {/* VALUE */}
+
         <section
           style={{
             maxWidth: "1100px",
@@ -300,17 +268,36 @@ export default function LandingPage() {
               color: "#d1d5db",
             }}
           >
-            <p>• Warum kontrolliert trinken meistens scheitert</p>
-            <p>• Wie Alkohol Kontrolle über deinen Alltag übernimmt</p>
-            <p>• Wie du alkoholfrei leben kannst</p>
-            <p>• Wie du Rückfälle vermeidest</p>
-            <p>• Wie du dauerhaft nüchtern wirst</p>
-            <p>• Warum Willenskraft allein nicht reicht</p>
-            <p>• Wie Alkoholabhängigkeit wirklich funktioniert</p>
+            <p>• warum kontrolliertes Trinken scheitert</p>
+
+            <p>
+              • warum Alkohol nie wirklich das eigentliche Problem war
+            </p>
+
+            <p>• wie Alkohol langsam Kontrolle übernimmt</p>
+
+            <p>
+              • warum Rückfälle nicht aus Schwäche entstehen
+            </p>
+
+            <p>
+              • weshalb Willenskraft allein selten reicht
+            </p>
+
+            <p>
+              • wie Ehrlichkeit wichtiger wird als Motivation
+            </p>
+
+            <p>
+              • und warum echte Freiheit erst beginnt,
+              wenn du aufhörst,
+              dich selbst zu verlassen
+            </p>
           </div>
         </section>
 
         {/* AUTHOR */}
+
         <section
           style={{
             backgroundColor: "#111111",
@@ -335,7 +322,8 @@ export default function LandingPage() {
                 style={{
                   width: "100%",
                   borderRadius: "24px",
-                  boxShadow: "0 20px 60px rgba(0,0,0,0.45)",
+                  boxShadow:
+                    "0 20px 60px rgba(0,0,0,0.45)",
                 }}
               />
             </div>
@@ -363,35 +351,34 @@ export default function LandingPage() {
                 <br />
                 Kein Experte.
                 <br />
-                Jemand, der selbst dort war.
+                Kein Mensch mit perfekten Antworten.
               </h2>
 
               <p
                 style={{
                   fontSize: "20px",
                   color: "#d1d5db",
-                  marginBottom: "20px",
+                  lineHeight: 1.8,
                 }}
               >
-                Dieses Buch über Alkohol aufhören ist keine Theorie.
-              </p>
-
-              <p
-                style={{
-                  fontSize: "20px",
-                  color: "#d1d5db",
-                }}
-              >
-                Es ist die Wahrheit eines Menschen,
-                der selbst fast an Alkohol zerbrochen wäre —
-                und verstanden hat,
-                warum weniger trinken niemals funktioniert hat.
+                Sondern jemand,
+                der selbst jahrelang geglaubt hat,
+                alles im Griff zu haben.
+                <br />
+                <br />
+                Dieses Buch ist keine Theorie.
+                <br />
+                <br />
+                Sondern die ehrliche Geschichte eines Menschen,
+                der verstanden hat,
+                warum weniger trinken niemals die Lösung war.
               </p>
             </div>
           </div>
         </section>
 
         {/* FAQ */}
+
         <section
           style={{
             padding: "100px 24px",
@@ -416,57 +403,108 @@ export default function LandingPage() {
             }}
           >
             <div>
-              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+              <h3
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "10px",
+                }}
+              >
                 Wie hört man mit Alkohol auf?
               </h3>
 
-              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
                 Der wichtigste Schritt ist Ehrlichkeit.
-                Viele Menschen versuchen jahrelang kontrolliert zu trinken,
+                Viele Menschen versuchen jahrelang kontrolliert
+                zu trinken,
                 obwohl genau das nicht mehr funktioniert.
               </p>
             </div>
 
             <div>
-              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+              <h3
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "10px",
+                }}
+              >
                 Warum funktioniert weniger trinken nicht?
               </h3>
 
-              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
                 Weil Alkoholabhängigkeit selten bei einem Glas bleibt.
                 Der Kampf beginnt oft erst nach dem ersten Schluck.
               </p>
             </div>
 
             <div>
-              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+              <h3
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "10px",
+                }}
+              >
                 Wie wird man alkoholfrei?
               </h3>
 
-              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
                 Dauerhafte Abstinenz beginnt mit einer klaren Entscheidung —
                 nicht mit Motivation.
               </p>
             </div>
 
             <div>
-              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+              <h3
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "10px",
+                }}
+              >
                 Wann ist man alkoholabhängig?
               </h3>
 
-              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
-                Wenn Alkohol deinen Alltag kontrolliert,
-                deine Gedanken bestimmt
-                oder du ständig versuchst weniger zu trinken.
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
+                Wenn du ständig darüber nachdenkst,
+                weniger zu trinken —
+                und es trotzdem nicht wirklich schaffst.
               </p>
             </div>
 
             <div>
-              <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>
+              <h3
+                style={{
+                  fontSize: "28px",
+                  marginBottom: "10px",
+                }}
+              >
                 Wie vermeidet man Rückfälle?
               </h3>
 
-              <p style={{ color: "#cfcfcf", fontSize: "18px" }}>
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  fontSize: "18px",
+                }}
+              >
                 Rückfälle vermeidet man nicht mit Disziplin —
                 sondern mit neuen Gewohnheiten,
                 Ehrlichkeit und klaren Entscheidungen.
@@ -476,6 +514,7 @@ export default function LandingPage() {
         </section>
 
         {/* FINAL CTA */}
+
         <section
           style={{
             textAlign: "center",
@@ -495,9 +534,13 @@ export default function LandingPage() {
                 marginBottom: "24px",
               }}
             >
-              Du musst nicht perfekt sein.
+              Freiheit beginnt oft
               <br />
-              Du musst nur anfangen.
+              in dem Moment,
+              <br />
+              in dem du aufhörst,
+              <br />
+              dich selbst zu belügen.
             </h2>
 
             <p
@@ -530,83 +573,6 @@ export default function LandingPage() {
             </a>
           </div>
         </section>
-<section
-  style={{
-    textAlign: "center",
-    padding: "80px 24px",
-    backgroundColor: "#111111",
-  }}
->
-  <h2
-    style={{
-      fontSize: "42px",
-      marginBottom: "20px",
-    }}
-  >
-    Mehr zum Thema Alkohol aufhören
-  </h2>
-
-  <p
-    style={{
-      fontSize: "20px",
-      color: "#cfcfcf",
-      marginBottom: "30px",
-      maxWidth: "700px",
-      marginInline: "auto",
-    }}
-  >
-    Ehrliche Artikel über Alkoholabhängigkeit,
-    Rückfälle, alkoholfrei leben
-    und warum kontrolliertes Trinken oft scheitert.
-  </p>
-
-  <a
-    href="/blog"
-    style={{
-      display: "inline-block",
-      backgroundColor: "#D68A1F",
-      color: "black",
-      padding: "18px 34px",
-      borderRadius: "16px",
-      fontWeight: 700,
-      fontSize: "18px",
-      textDecoration: "none",
-    }}
-  >
-    Zum Blog
-  </a>
-</section>
-        {/* FOOTER */}
-        <footer
-          style={{
-            textAlign: "center",
-            padding: "50px 20px",
-            color: "#888",
-            fontSize: "14px",
-            borderTop: "1px solid #1f1f1f",
-          }}
-        >
-          <a
-            href="/impressum"
-            style={{
-              color: "#888",
-              marginRight: "20px",
-              textDecoration: "none",
-            }}
-          >
-            Impressum
-          </a>
-
-          <a
-            href="/datenschutz"
-            style={{
-              color: "#888",
-              textDecoration: "none",
-            }}
-          >
-            Datenschutz
-          </a>
-        </footer>
       </main>
     </>
   );
