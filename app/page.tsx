@@ -36,7 +36,7 @@ export default function HomePage() {
           <div>
             <h1
               style={{
-                fontSize: "clamp(58px, 8vw, 110px)",
+                fontSize: "clamp(42px, 6vw, 82px)",
                 lineHeight: 0.95,
                 fontWeight: 900,
                 marginBottom: "40px",
@@ -124,7 +124,7 @@ export default function HomePage() {
   playsInline
   style={{
     width: "92%",
-    maxWidth: "620px",
+    maxWidth: "720px",
     height: "auto",
     objectFit: "contain",
     borderRadius: "28px",
@@ -213,7 +213,7 @@ export default function HomePage() {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               gap: "70px",
-              alignItems: "center",
+              alignItems: "start",
             }}
           >
             <div>
