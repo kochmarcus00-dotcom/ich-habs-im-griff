@@ -31,6 +31,22 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
 
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BMPJTC4K5T"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BMPJTC4K5T');
+          `}
+        </Script>
+
+        {/* Umami Analytics */}
         <Script
           defer
           src="https://cloud.umami.is/script.js"
