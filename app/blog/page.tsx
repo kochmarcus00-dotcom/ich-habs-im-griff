@@ -24,6 +24,14 @@ export default function BlogPage() {
       excerpt:
         "Die ehrlichsten Warnzeichen, die fast niemand wahrhaben will.",
     },
+
+{
+  title: "Alkohol und Beziehung",
+  slug: "alkohol-und-beziehung",
+  excerpt:
+    "Wenn Alkohol zwischen zwei Menschen steht und Vertrauen langsam verloren geht.",
+},
+
   ];
 
   return (
