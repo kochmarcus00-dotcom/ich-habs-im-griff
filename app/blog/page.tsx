@@ -32,6 +32,20 @@ export default function BlogPage() {
     "Wenn Alkohol zwischen zwei Menschen steht und Vertrauen langsam verloren geht.",
 },
 
+{
+  title: "Alkohol und Schlaf",
+  slug: "alkohol-und-schlaf",
+  excerpt:
+    "Warum Alkohol müde macht, aber vielen Menschen trotzdem den Schlaf raubt.",
+},
+
+{
+  title: "Alkohol und Angst",
+  slug: "alkohol-und-angst",
+  excerpt:
+    "Warum Alkohol kurzfristig beruhigt, Angst langfristig aber oft verstärkt.",
+},
+
   ];
 
   return (
