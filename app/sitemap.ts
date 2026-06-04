@@ -49,5 +49,15 @@ export default function sitemap() {
       url: "https://www.ich-habs-im-griff.de/datenschutz",
       lastModified: new Date(),
     },
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/alkohol-und-arbeit",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/rueckfall-alkoholfrei",
+  lastModified: new Date(),
+},
   ];
 }

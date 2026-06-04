@@ -46,6 +46,20 @@ export default function BlogPage() {
     "Warum Alkohol kurzfristig beruhigt, Angst langfristig aber oft verstärkt.",
 },
 
+{
+  title: "Alkohol und Arbeit",
+  slug: "alkohol-und-arbeit",
+  excerpt:
+    "Warum Funktionieren im Alltag nicht bedeutet, dass alles in Ordnung ist.",
+},
+
+{
+  title: "Rückfall nach Monaten alkoholfrei",
+  slug: "rueckfall-alkoholfrei",
+  excerpt:
+    "Warum ein Rückfall nicht bedeutet, dass alle Fortschritte verloren sind.",
+},
+
   ];
 
   return (
