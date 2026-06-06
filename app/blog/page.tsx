@@ -63,14 +63,14 @@ export default function BlogPage() {
 {
   slug: "funktionierender-alkoholiker",
   title: "Funktionierender Alkoholiker",
-  description:
+  excerpt:
     "Warum Job, Familie und Alltag nicht beweisen, dass alles in Ordnung ist.",
 },
 
 {
   slug: "10-warnzeichen-alkoholabhaengigkeit",
   title: "10 Warnzeichen für Alkoholabhängigkeit",
-  description:
+  excerpt:
     "Die ehrlichen Signale, die viele Menschen viel zu lange ignorieren.",
 },
 
