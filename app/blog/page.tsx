@@ -60,6 +60,20 @@ export default function BlogPage() {
     "Warum ein Rückfall nicht bedeutet, dass alle Fortschritte verloren sind.",
 },
 
+{
+  slug: "funktionierender-alkoholiker",
+  title: "Funktionierender Alkoholiker",
+  description:
+    "Warum Job, Familie und Alltag nicht beweisen, dass alles in Ordnung ist.",
+},
+
+{
+  slug: "10-warnzeichen-alkoholabhaengigkeit",
+  title: "10 Warnzeichen für Alkoholabhängigkeit",
+  description:
+    "Die ehrlichen Signale, die viele Menschen viel zu lange ignorieren.",
+},
+
   ];
 
   return (
