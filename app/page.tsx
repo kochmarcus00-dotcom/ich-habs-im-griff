@@ -274,28 +274,6 @@ export default function HomePage() {
                   fontSize: "15px",
                   marginBottom: "18px",
                 }}
-
-<div
-  style={{
-    marginTop: "40px",
-  }}
->
-  <a
-    href="/ueber-marcus-koch"
-    style={{
-      display: "inline-block",
-      backgroundColor: "#D68A1F",
-      color: "black",
-      padding: "16px 28px",
-      borderRadius: "14px",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "18px",
-    }}
-  >
-    Mehr über Marcus Koch →
-  </a>
-</div>
               >
                 Der Autor
               </p>
