@@ -29,8 +29,7 @@ marginBottom: "30px",
 >
 Alkohol und Langeweile </h1>
 
-```
-    <p
+<p
       style={{
         fontSize: "22px",
         color: "#d1d5db",
@@ -349,7 +348,6 @@ Alkohol und Langeweile </h1>
     </div>
   </article>
 </main>
-```
 
 );
 }

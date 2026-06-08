@@ -29,8 +29,7 @@ marginBottom: "30px",
 >
 Feierabendbier jeden Tag </h1>
 
-```
-    <p style={{ fontSize: "22px", color: "#d1d5db", marginBottom: "30px" }}>
+<p style={{ fontSize: "22px", color: "#d1d5db", marginBottom: "30px" }}>
       Viele Menschen trinken nicht auf Partys.
     </p>
 
@@ -161,7 +160,6 @@ Feierabendbier jeden Tag </h1>
     </div>
   </article>
 </main>
-```
 
 );
 }
