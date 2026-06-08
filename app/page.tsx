@@ -336,6 +336,27 @@ export default function HomePage() {
                 der verstanden hat,
                 warum weniger trinken niemals die Lösung war.
               </p>
+<div
+  style={{
+    marginTop: "40px",
+  }}
+>
+  <a
+    href="/ueber-marcus-koch"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#D68A1F",
+      color: "black",
+      padding: "16px 28px",
+      borderRadius: "14px",
+      textDecoration: "none",
+      fontWeight: 700,
+      fontSize: "18px",
+    }}
+  >
+    Mehr über Marcus Koch →
+  </a>
+</div>
             </div>
           </div>
         </section>
@@ -505,6 +526,8 @@ export default function HomePage() {
                 fontSize: "18px",
               }}
             >
+              Blog
+            </a>
 <a
   href="/ueber-marcus-koch"
   style={{
@@ -515,9 +538,6 @@ export default function HomePage() {
 >
   Über Marcus Koch
 </a>
-              Blog
-            </a>
-
             <a
               href="/impressum"
               style={{
