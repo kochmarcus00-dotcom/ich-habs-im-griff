@@ -74,6 +74,20 @@ export default function BlogPage() {
     "Die ehrlichen Signale, die viele Menschen viel zu lange ignorieren.",
 },
 
+{
+  slug: "feierabendbier-jeden-tag",
+  title: "Feierabendbier jeden Tag",
+  excerpt:
+    "Wann eine Gewohnheit beginnt und warum viele Menschen sie unterschätzen.",
+},
+
+{
+  slug: "alkohol-und-langeweile",
+  title: "Alkohol und Langeweile",
+  excerpt:
+    "Warum viele Menschen nicht wegen Alkohol trinken, sondern wegen der Leere dazwischen.",
+},
+
   ];
 
   return (
