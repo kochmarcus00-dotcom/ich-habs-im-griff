@@ -88,6 +88,34 @@ export default function BlogPage() {
     "Warum viele Menschen nicht wegen Alkohol trinken, sondern wegen der Leere dazwischen.",
 },
 
+{
+  title: "Alkohol und Depression",
+  description:
+    "Warum Depressionen einer der häufigsten Gründe für regelmäßigen Alkoholkonsum ist.",
+  href: "/blog/alkohol-und-depression",
+},
+
+{
+  title: "Alkohol und Einsamkeit",
+  description:
+    "Warum Einsamkeit einer der häufigsten Gründe für regelmäßigen Alkoholkonsum ist.",
+  href: "/blog/alkohol-und-einsamkeit",
+},
+
+{
+  title: "Warum ich dachte, ich hätte alles im Griff",
+  description:
+    "Viele Menschen mit Alkoholproblemen glauben lange Zeit, die Kontrolle zu haben. Ich auch.",
+  href: "/blog/ich-dachte-ich-haette-alles-im-griff",
+},
+
+{
+  title: "Alkohol und Scham",
+  description:
+    "Warum Scham und Alkohol oft in einem gefährlichen Kreislauf miteinander verbunden sind.",
+  href: "/blog/alkohol-und-scham",
+},
+
   ];
 
   return (
