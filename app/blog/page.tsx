@@ -116,6 +116,31 @@ export default function BlogPage() {
     "Warum Scham und Alkohol oft in einem gefährlichen Kreislauf miteinander verbunden sind.",
 },
 
+{
+  slug: "ich-trinke-nur-am-wochenende",
+  title: "Ich trinke nur am Wochenende",
+  excerpt:
+    "Warum ein Alkoholproblem nicht davon abhängt, an wie vielen Tagen du trinkst.",
+},
+{
+  slug: "kontrolliertes-trinken",
+  title: "Warum kontrolliertes Trinken oft scheitert",
+  excerpt:
+    "Warum viele Menschen jahrelang versuchen, weniger zu trinken – statt ehrlich aufzuhören.",
+},
+{
+  slug: "warum-alkoholprobleme-lange-unsichtbar-bleiben",
+  title: "Warum Alkoholprobleme lange unsichtbar bleiben",
+  excerpt:
+    "Die meisten Alkoholprobleme beginnen nicht mit einem Absturz. Genau deshalb werden sie oft übersehen.",
+},
+{
+  slug: "warum-der-gedanke-ans-aufhoeren-angst-macht",
+  title: "Warum der Gedanke ans Aufhören Angst macht",
+  excerpt:
+    "Viele Menschen haben weniger Angst vor Alkohol als vor einem Leben ohne ihn.",
+},
+
   ];
 
   return (
