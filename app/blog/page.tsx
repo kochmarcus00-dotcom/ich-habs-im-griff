@@ -141,6 +141,31 @@ export default function BlogPage() {
     "Viele Menschen haben weniger Angst vor Alkohol als vor einem Leben ohne ihn.",
 },
 
+{
+  slug: "ich-kann-jederzeit-aufhoeren",
+  title: "Ich kann jederzeit aufhören",
+  excerpt:
+    "Warum dieser Satz viele Menschen jahrelang davon abhält, ehrlich hinzuschauen.",
+},
+{
+  slug: "warum-viele-menschen-heimlich-trinken",
+  title: "Warum viele Menschen heimlich trinken",
+  excerpt:
+    "Wenn Alkohol nicht mehr nur Genuss ist, sondern etwas wird, das man verstecken möchte.",
+},
+{
+  slug: "alkohol-als-belohnung",
+  title: "Alkohol als Belohnung",
+  excerpt:
+    "Warum Alkohol für viele Menschen irgendwann zur Standardantwort auf Stress und Anstrengung wird.",
+},
+{
+  slug: "wann-wird-alkohol-zur-gewohnheit",
+  title: "Wann wird Alkohol zur Gewohnheit?",
+  excerpt:
+    "Die meisten Alkoholprobleme beginnen nicht mit einem Absturz, sondern mit einer Routine.",
+},
+
   ];
 
   return (
