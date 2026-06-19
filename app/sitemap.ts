@@ -120,5 +120,26 @@ export default function sitemap() {
   lastModified: new Date(),
 },
 
+{
+  url: "https://www.ich-habs-im-griff.de/blog/ich-kann-jederzeit-aufhoeren",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/warum-viele-menschen-heimlich-trinken",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/alkohol-als-belohnung",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/wann-wird-alkohol-zur-gewohnheit",
+  lastModified: new Date(),
+},
+
   ];
 }
+
