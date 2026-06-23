@@ -140,6 +140,36 @@ export default function sitemap() {
   lastModified: new Date(),
 },
 
+{
+  url: "https://www.ich-habs-im-griff.de/blog/ich-war-kein-alkoholiker-dachte-ich",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/alkohol-und-selbstbetrug",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/warum-alkohol-nicht-beim-ersten-glas-beginnt",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/warum-viele-menschen-erst-spaet-ehrlich-werden",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/alkohol-und-stress",
+  lastModified: new Date(),
+},
+
+{
+  url: "https://www.ich-habs-im-griff.de/blog/was-sich-nach-einem-jahr-ohne-alkohol-veraendert",
+  lastModified: new Date(),
+},
+
   ];
 }
 

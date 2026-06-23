@@ -166,6 +166,48 @@ export default function BlogPage() {
     "Die meisten Alkoholprobleme beginnen nicht mit einem Absturz, sondern mit einer Routine.",
 },
 
+{
+ slug: "ich-war-kein-alkoholiker-dachte-ich",
+ title: "Ich war kein Alkoholiker. Dachte ich.",
+ excerpt:
+   "Warum viele Menschen sich jahrelang mit den falschen Personen vergleichen.",
+},
+
+{
+ slug: "alkohol-und-selbstbetrug",
+ title: "Alkohol und Selbstbetrug",
+ excerpt:
+   "Die meisten Menschen belügen nicht andere über ihren Alkoholkonsum. Sie belügen sich selbst.",
+},
+
+{
+ slug: "warum-alkohol-nicht-beim-ersten-glas-beginnt",
+ title: "Warum Alkohol nicht beim ersten Glas beginnt",
+ excerpt:
+   "Viele Trinkentscheidungen werden getroffen, lange bevor das erste Glas eingeschenkt wird.",
+},
+
+{
+ slug: "warum-viele-menschen-erst-spaet-ehrlich-werden",
+ title: "Warum viele Menschen erst spät ehrlich werden",
+ excerpt:
+   "Nicht der Alkohol ist oft das größte Problem, sondern die Geschichten, die wir uns darüber erzählen.",
+},
+
+{
+ slug: "alkohol-und-stress",
+ title: "Alkohol und Stress",
+ excerpt:
+   "Warum Alkohol Stress kurzfristig überdeckt, langfristig aber oft verstärkt.",
+},
+
+{
+ slug: "was-sich-nach-einem-jahr-ohne-alkohol-veraendert",
+ title: "Was sich nach einem Jahr ohne Alkohol verändert",
+ excerpt:
+   "Mehr als nur Schlaf, Gesundheit und Energie. Oft verändert sich die Sicht auf das ganze Leben.",
+},
+
   ];
 
   return (
