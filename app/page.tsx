@@ -504,13 +504,14 @@ export default function HomePage() {
               <div
                 style={{
                   display: "flex",
-                  gap: "24px",
+                  gap: "32px",
+                  alignItems: "center",
                 }}
               >
                 <Image
                   src="/book_cover.png"
                   alt="Ich dachte, ich hab's im Griff"
-                  width={110}
+                  width={135}
                   height={170}
                   style={{
                     borderRadius: "8px",
@@ -522,7 +523,7 @@ export default function HomePage() {
                   <h3
                     style={{
                       color: "white",
-                      fontSize: "34px",
+                      fontSize: "28px",
                       marginBottom: "18px",
                     }}
                   >
@@ -544,7 +545,7 @@ export default function HomePage() {
                   </p>
 
                   <a
-                    href="https://www.amazon.de/dp/B0FH6T3V4K"
+                    href="https://www.amazon.de/dp/B0GH8RX7W6"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -555,9 +556,10 @@ export default function HomePage() {
                       color: "#D68A1F",
                       textDecoration: "none",
                       fontWeight: 700,
+                      fontSize: "14px",
                     }}
                   >
-                    🛒 Zum Buch auf Amazon
+                    🛒 Jetzt auf Amazon
                   </a>
                 </div>
               </div>
@@ -679,13 +681,13 @@ export default function HomePage() {
                   fontSize: "30px",
                 }}
               >
-                Freiheit beginnt oft
+                Der schwierigste Schritt ist nicht,
                 <br />
-                in dem Moment,
+                mit dem Trinken aufzuhören.
                 <br />
-                in dem du aufhörst,
+                Sondern aufzuhören,
                 <br />
-                dich selbst zu belügen.
+                sich selbst zu belügen.
               </p>
 
               <div
