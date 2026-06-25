@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const metadata = {
   title:
     "Alkohol aufhören Buch | Warum weniger trinken nicht funktioniert",
@@ -506,12 +507,12 @@ export default function HomePage() {
                   gap: "24px",
                 }}
               >
-                <img
+                <Image
                   src="/book_cover.png"
                   alt="Ich dachte, ich hab's im Griff"
+                  width={110}
+                  height={170}
                   style={{
-                    width: "110px",
-                    height: "auto",
                     borderRadius: "8px",
                     boxShadow: "0 15px 35px rgba(0,0,0,.45)",
                   }}
@@ -581,19 +582,37 @@ export default function HomePage() {
                   gap: "18px",
                 }}
               >
-                <a href="/" style={linkStyle}>Startseite</a>
+                <a
+                  href="/"
+                  style={{
+                    color: "#d7d7d7",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                  }}
+                >
+                  Startseite
+                </a>
+
                 <a
                   href="/blog"
                   style={{
-                    ...linkStyle,
                     color: "#D68A1F",
-                    fontWeight: 700,
+                    textDecoration: "none",
                     fontSize: "22px",
+                    fontWeight: 700,
                   }}
                 >
-                  Blog
+                  → Blog
                 </a>
-                <a href="/ueber-marcus-koch" style={linkStyle}>
+
+                <a
+                  href="/ueber-marcus-koch"
+                  style={{
+                    color: "#d7d7d7",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                  }}
+                >
                   Über Marcus Koch
                 </a>
               </div>
@@ -618,16 +637,29 @@ export default function HomePage() {
                   gap: "18px",
                 }}
               >
-                <a href="/impressum" style={linkStyle}>
+                <a
+                  href="/impressum"
+                  style={{
+                    color: "#d7d7d7",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                  }}
+                >
                   Impressum
                 </a>
 
-                <a href="/datenschutz" style={linkStyle}>
+                <a
+                  href="/datenschutz"
+                  style={{
+                    color: "#d7d7d7",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                  }}
+                >
                   Datenschutz
                 </a>
               </div>
             </div>
-
             {/* Zitat */}
             <div>
               <div
