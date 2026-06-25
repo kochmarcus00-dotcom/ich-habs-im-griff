@@ -1,3 +1,5 @@
+import ArticleExtras from "@/app/components/ArticleExtras";
+
 export const metadata = {
   title: "Warum weniger trinken nicht funktioniert",
   description:
@@ -80,43 +82,27 @@ export default function ArticlePage() {
           wie lange man es ohne Alkohol aushält.
         </p>
 
-        <a
-          href="https://www.amazon.de/dp/B0GH8RX7W6"
-          target="_blank"
-          rel="noopener noreferrer"
+        <ArticleExtras article="warnzeichen" />
+        <div
           style={{
-            display: "inline-block",
-            marginTop: "40px",
-            backgroundColor: "#D68A1F",
-            color: "black",
-            padding: "18px 32px",
-            borderRadius: "16px",
-            textDecoration: "none",
-            fontWeight: 700,
+            marginTop: "60px",
+            paddingTop: "30px",
+            borderTop: "1px solid #222",
           }}
         >
-          Zum Buch auf Amazon
-        </a>
-<div
-  style={{
-    marginTop: "60px",
-    paddingTop: "30px",
-    borderTop: "1px solid #222",
-  }}
->
-  <a
-    href="/blog"
-    style={{
-      display: "inline-block",
-      color: "#D68A1F",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "18px",
-    }}
-  >
-    ← Zurück zum Blog
-  </a>
-</div>
+          <a
+            href="/blog"
+            style={{
+              display: "inline-block",
+              color: "#D68A1F",
+              textDecoration: "none",
+              fontWeight: 700,
+              fontSize: "18px",
+            }}
+          >
+            ← Zurück zum Blog
+          </a>
+        </div>
       </article>
     </main>
   );

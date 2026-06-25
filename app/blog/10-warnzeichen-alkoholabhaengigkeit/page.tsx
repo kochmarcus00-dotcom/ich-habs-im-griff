@@ -1,3 +1,5 @@
+import ArticleExtras from "@/app/components/ArticleExtras";
+
 export const metadata = {
   title: "10 Warnzeichen für Alkoholabhängigkeit",
   description:
@@ -77,44 +79,9 @@ export default function ArticlePage() {
           „Warum fällt es mir so schwer, ehrlich darüber nachzudenken?“
         </p>
 
-        <a
-          href="https://www.amazon.de/dp/B0FH6T3V4K"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            backgroundColor: "#D68A1F",
-            color: "black",
-            padding: "18px 32px",
-            borderRadius: "16px",
-            textDecoration: "none",
-            fontWeight: 700,
-          }}
-        >
-          Zum Buch auf Amazon
-        </a>
+        <ArticleExtras article="warnzeichen" />
 
-        <div
-          style={{
-            marginTop: "60px",
-            paddingTop: "30px",
-            borderTop: "1px solid #222",
-          }}
-        >
-          <a
-            href="/blog"
-            style={{
-              display: "inline-block",
-              color: "#D68A1F",
-              textDecoration: "none",
-              fontWeight: 700,
-              fontSize: "18px",
-            }}
-          >
-            ← Zurück zum Blog
-          </a>
-        </div>
       </article>
-    </main>
+    </main >
   );
 }

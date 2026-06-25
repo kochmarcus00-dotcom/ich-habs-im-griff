@@ -1,3 +1,5 @@
+import ArticleExtras from "@/app/components/ArticleExtras";
+
 export const metadata = {
   title: "Funktionierender Alkoholiker – Wenn alles normal aussieht",
   description:
@@ -227,23 +229,7 @@ export default function ArticlePage() {
           "Warum brauche ich Alkohol überhaupt?"
         </p>
 
-        <a
-          href="https://www.amazon.de/dp/B0GH8RX7W6"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            backgroundColor: "#D68A1F",
-            color: "black",
-            padding: "18px 32px",
-            borderRadius: "16px",
-            textDecoration: "none",
-            fontWeight: 700,
-          }}
-        >
-          Zum Buch auf Amazon
-        </a>
-
+        <ArticleExtras article="warnzeichen" />
         <div
           style={{
             marginTop: "60px",
