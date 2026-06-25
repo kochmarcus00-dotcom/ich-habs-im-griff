@@ -314,27 +314,27 @@ export default function HomePage() {
                 der verstanden hat,
                 warum weniger trinken niemals die Lösung war.
               </p>
-<div
-  style={{
-    marginTop: "40px",
-  }}
->
-  <a
-    href="/ueber-marcus-koch"
-    style={{
-      display: "inline-block",
-      backgroundColor: "#D68A1F",
-      color: "black",
-      padding: "16px 28px",
-      borderRadius: "14px",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "18px",
-    }}
-  >
-    Mehr über Marcus Koch →
-  </a>
-</div>
+              <div
+                style={{
+                  marginTop: "40px",
+                }}
+              >
+                <a
+                  href="/ueber-marcus-koch"
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: "#D68A1F",
+                    color: "black",
+                    padding: "16px 28px",
+                    borderRadius: "14px",
+                    textDecoration: "none",
+                    fontWeight: 700,
+                    fontSize: "18px",
+                  }}
+                >
+                  Mehr über Marcus Koch →
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -483,60 +483,208 @@ export default function HomePage() {
 
         <footer
           style={{
-            padding: "40px 24px",
-            borderTop: "1px solid #1f1f1f",
-            textAlign: "center",
+            marginTop: "140px",
+            borderTop: "1px solid #242424",
+            background: "#0A0A0A",
           }}
         >
           <div
             style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "30px",
-              flexWrap: "wrap",
+              maxWidth: "1400px",
+              margin: "0 auto",
+              padding: "70px 40px",
+              display: "grid",
+              gridTemplateColumns: "1.5fr 1fr 1fr 1fr",
+              gap: "60px",
             }}
           >
-            <a
-              href="/blog"
-              style={{
-                color: "#cfcfcf",
-                textDecoration: "none",
-                fontSize: "18px",
-              }}
-            >
-              Blog
-            </a>
-<a
-  href="/ueber-marcus-koch"
-  style={{
-    color: "#cfcfcf",
-    textDecoration: "none",
-    fontSize: "18px",
-  }}
->
-  Über Marcus Koch
-</a>
-            <a
-              href="/impressum"
-              style={{
-                color: "#cfcfcf",
-                textDecoration: "none",
-                fontSize: "18px",
-              }}
-            >
-              Impressum
-            </a>
+            {/* Buch */}
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "24px",
+                }}
+              >
+                <img
+                  src="/book_cover.png"
+                  alt="Ich dachte, ich hab's im Griff"
+                  style={{
+                    width: "110px",
+                    height: "auto",
+                    borderRadius: "8px",
+                    boxShadow: "0 15px 35px rgba(0,0,0,.45)",
+                  }}
+                />
 
-            <a
-              href="/datenschutz"
-              style={{
-                color: "#cfcfcf",
-                textDecoration: "none",
-                fontSize: "18px",
-              }}
-            >
-              Datenschutz
-            </a>
+                <div>
+                  <h3
+                    style={{
+                      color: "white",
+                      fontSize: "34px",
+                      marginBottom: "18px",
+                    }}
+                  >
+                    Ich dachte,
+                    <br />
+                    ich hab's im Griff
+                  </h3>
+
+                  <p
+                    style={{
+                      color: "#bdbdbd",
+                      lineHeight: "1.8",
+                      marginBottom: "24px",
+                    }}
+                  >
+                    Ein ehrliches Buch über Alkohol,
+                    Selbsttäuschung und den Weg zurück
+                    in ein freies Leben.
+                  </p>
+
+                  <a
+                    href="https://www.amazon.de/dp/B0FH6T3V4K"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      padding: "16px 28px",
+                      border: "1px solid #D68A1F",
+                      borderRadius: "12px",
+                      color: "#D68A1F",
+                      textDecoration: "none",
+                      fontWeight: 700,
+                    }}
+                  >
+                    🛒 Zum Buch auf Amazon
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4
+                style={{
+                  color: "#D68A1F",
+                  marginBottom: "25px",
+                  fontSize: "24px",
+                }}
+              >
+                Navigation
+              </h4>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "18px",
+                }}
+              >
+                <a href="/" style={linkStyle}>Startseite</a>
+                <a
+                  href="/blog"
+                  style={{
+                    ...linkStyle,
+                    color: "#D68A1F",
+                    fontWeight: 700,
+                    fontSize: "22px",
+                  }}
+                >
+                  Blog
+                </a>
+                <a href="/ueber-marcus-koch" style={linkStyle}>
+                  Über Marcus Koch
+                </a>
+              </div>
+            </div>
+
+            {/* Rechtliches */}
+            <div>
+              <h4
+                style={{
+                  color: "#D68A1F",
+                  marginBottom: "25px",
+                  fontSize: "24px",
+                }}
+              >
+                Rechtliches
+              </h4>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "18px",
+                }}
+              >
+                <a href="/impressum" style={linkStyle}>
+                  Impressum
+                </a>
+
+                <a href="/datenschutz" style={linkStyle}>
+                  Datenschutz
+                </a>
+              </div>
+            </div>
+
+            {/* Zitat */}
+            <div>
+              <div
+                style={{
+                  color: "#D68A1F",
+                  fontSize: "70px",
+                  lineHeight: 1,
+                }}
+              >
+                “
+              </div>
+
+              <p
+                style={{
+                  color: "white",
+                  lineHeight: "1.7",
+                  fontSize: "30px",
+                }}
+              >
+                Freiheit beginnt oft
+                <br />
+                in dem Moment,
+                <br />
+                in dem du aufhörst,
+                <br />
+                dich selbst zu belügen.
+              </p>
+
+              <div
+                style={{
+                  marginTop: "25px",
+                  width: "80px",
+                  height: "2px",
+                  background: "#D68A1F",
+                }}
+              />
+
+              <p
+                style={{
+                  marginTop: "20px",
+                  color: "#D68A1F",
+                }}
+              >
+                Marcus Koch
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              borderTop: "1px solid #242424",
+              padding: "30px",
+              textAlign: "center",
+              color: "#8d8d8d",
+            }}
+          >
+            © 2026 ich-habs-im-griff.de · Alle Rechte vorbehalten.
           </div>
         </footer>
       </main>

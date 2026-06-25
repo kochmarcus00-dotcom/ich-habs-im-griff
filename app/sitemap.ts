@@ -91,7 +91,7 @@ export default function sitemap() {
 },
 
 {
-  url: "https://www.ich-habs-im-griff.de/blog/warum-ich-dachte-ich-haette-alles-im-griff",
+  url: "https://www.ich-habs-im-griff.de/blog/ich-dachte-ich-haette-alles-im-griff",
   lastModified: new Date(),
 },
 
