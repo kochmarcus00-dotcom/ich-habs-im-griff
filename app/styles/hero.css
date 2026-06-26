@@ -1,0 +1,550 @@
+/* ==========================================================
+   HERO - VERSION 1
+========================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 50% 72%,
+            rgba(255, 194, 110, .32) 0%,
+            rgba(255, 194, 110, .16) 18%,
+            rgba(232, 184, 97, 0) 45%),
+
+        linear-gradient(180deg,
+            #060811 0%,
+            #111827 10%,
+            #2F2B49 24%,
+            #65405A 42%,
+            #B4524D 60%,
+            #E88549 76%,
+            #F7C97B 90%,
+            #FFF1CF 100%);
+}
+
+/* ==========================================================
+   LICHTWOLKEN
+========================================================== */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+
+        radial-gradient(ellipse 900px 500px at 50% 72%,
+
+            rgba(255, 214, 135, .18) 0%,
+
+            rgba(255, 188, 105, .10) 28%,
+
+            rgba(255, 155, 80, .04) 48%,
+
+            transparent 72%);
+
+    filter: blur(55px);
+
+    opacity: .95;
+
+}
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+
+        radial-gradient(ellipse 650px 320px at 70% 18%,
+
+            rgba(203, 82, 90, .10),
+
+            rgba(164, 58, 93, .05),
+
+            transparent 72%),
+
+        radial-gradient(ellipse 650px 320px at 28% 28%,
+
+            rgba(112, 72, 140, .08),
+
+            transparent 70%);
+
+    filter: blur(90px);
+
+    opacity: .9;
+
+}
+
+
+
+/* ==========================================================
+   HERO CONTAINER
+========================================================== */
+
+.hero-container {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: min(1100px, 90vw);
+
+    margin: 0 auto;
+
+    padding-top: 80px;
+
+    text-align: center;
+
+}
+
+/* ==========================================================
+   ATMOSPHÄRISCHER DUNST
+========================================================== */
+
+.hero-mist {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+}
+
+/* große warme Wolke */
+
+.hero-mist::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -180px;
+
+    transform: translateX(-50%);
+
+    width: 2200px;
+
+    height: 900px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(ellipse,
+
+            rgba(255, 238, 205, .16) 0%,
+
+            rgba(255, 228, 185, .10) 22%,
+
+            rgba(255, 210, 165, .06) 42%,
+
+            rgba(255, 185, 150, .025) 60%,
+
+            transparent 78%);
+
+    filter: blur(140px);
+
+    opacity: .95;
+
+}
+
+/* ==========================================================
+   ATMOSPHÄRISCHES LICHT
+========================================================== */
+
+.hero-air {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 3;
+
+}
+
+.hero-air::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 58%;
+
+    bottom: -120px;
+
+    width: 1200px;
+
+    height: 1200px;
+
+    transform: translateX(-50%);
+
+    background:
+
+        radial-gradient(circle,
+
+            rgba(255, 245, 225, .09),
+
+            rgba(255, 225, 185, .045) 35%,
+
+            transparent 72%);
+
+    filter: blur(120px);
+
+    mix-blend-mode: screen;
+
+}
+
+.hero-air::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 48%;
+
+    top: 180px;
+
+    width: 900px;
+
+    height: 500px;
+
+    background:
+
+        radial-gradient(ellipse,
+
+            rgba(255, 235, 205, .045),
+
+            transparent 70%);
+
+    filter: blur(90px);
+
+}
+
+/* zweite Nebelebene */
+
+.hero-mist::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 1300px;
+
+    height: 520px;
+
+    left: 50%;
+
+    bottom: 120px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(ellipse,
+
+            rgba(255, 235, 205, .08),
+
+            rgba(255, 220, 185, .04) 40%,
+
+            transparent 72%);
+
+    filter: blur(90px);
+
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.hero-logo-image {
+
+    width: 170px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    display: block;
+
+}
+
+.hero-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+}
+
+.hero-logo-circle {
+
+    width: 72px;
+
+    height: 72px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(214, 170, 92, .35);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #D6AA5C;
+
+    font-size: 28px;
+
+}
+
+.hero-logo span {
+
+    margin-top: 20px;
+
+    letter-spacing: .55em;
+
+    text-transform: uppercase;
+
+    color: #D6AA5C;
+
+    font-size: .72rem;
+
+}
+
+
+/* ==========================================================
+   HEADLINE
+========================================================== */
+
+.hero h1 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(60px, 8vw, 108px);
+
+    line-height: 1.02;
+
+    font-weight: 300;
+
+    color: #F4F1EC;
+
+    margin: 0 0 70px;
+
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.hero p {
+
+    margin: 0 auto 70px;
+
+    max-width: 760px;
+
+    color: rgba(255, 255, 255, .78);
+
+    font-size: 1.25rem;
+
+    line-height: 1.75;
+
+}
+
+/* ==========================================================
+   LEUCHTTURM-LICHTKEGEL
+   (volumetrisches Licht)
+========================================================== */
+
+.hero-beam {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+}
+
+/* großer Lichtstrahl */
+
+.hero-beam::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -320px;
+
+    width: 180px;
+
+    height: 1800px;
+
+    transform-origin: center bottom;
+
+    transform:
+
+        translateX(-50%) rotate(-22deg);
+
+    background:
+
+        linear-gradient(to top,
+
+            rgba(255, 250, 235, .95) 0%,
+
+            rgba(255, 236, 190, .55) 12%,
+
+            rgba(255, 220, 160, .18) 35%,
+
+            rgba(255, 220, 160, .04) 70%,
+
+            transparent 100%);
+
+    filter: blur(26px);
+
+    mix-blend-mode: screen;
+
+    opacity: .55;
+
+    animation: beamSweep 12s linear infinite;
+
+}
+
+
+/* äußeres Streulicht */
+
+.hero-beam::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -340px;
+
+    width: 520px;
+
+    height: 2000px;
+
+    transform-origin: center bottom;
+
+    transform:
+
+        translateX(-50%) rotate(-22deg);
+
+    background:
+
+        linear-gradient(to top,
+
+            rgba(255, 220, 170, .22),
+
+            rgba(255, 220, 170, .10) 28%,
+
+            rgba(255, 220, 170, .03) 60%,
+
+            transparent);
+
+    filter: blur(120px);
+
+    mix-blend-mode: screen;
+
+    opacity: .8;
+
+    animation: beamSweep 12s linear infinite;
+
+}
+
+@keyframes beamSweep {
+
+    0% {
+
+        transform:
+            translateX(-50%) rotate(-34deg);
+
+        opacity: 0;
+
+    }
+
+    12% {
+
+        opacity: .05;
+
+    }
+
+    22% {
+
+        opacity: .95;
+
+    }
+
+    50% {
+
+        transform:
+            translateX(-50%) rotate(8deg);
+
+        opacity: 1;
+
+    }
+
+    74% {
+
+        transform:
+            translateX(-50%) rotate(34deg);
+
+        opacity: .85;
+
+    }
+
+    82% {
+
+        opacity: .10;
+
+    }
+
+    100% {
+
+        transform:
+            translateX(-50%) rotate(34deg);
+
+        opacity: 0;
+
+    }
+
+}
