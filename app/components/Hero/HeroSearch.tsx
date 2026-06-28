@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CosmosIcon from "../icons/CosmosIcon";
 
 export default function HeroSearch() {
 
@@ -14,7 +15,7 @@ export default function HeroSearch() {
 
                 <div className="hero-search-icon">
 
-                    {/* später SVG */}
+                    <CosmosIcon />
 
                 </div>
 

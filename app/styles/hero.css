@@ -8,7 +8,9 @@
 
     min-height: 100vh;
 
-    overflow: hidden;
+    overflow-x: hidden;
+
+    overflow-y: visible;
 
     background:
         radial-gradient(circle at 50% 72%,
@@ -110,6 +112,28 @@
     padding-top: 80px;
 
     text-align: center;
+
+}
+
+.hero-search-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #D8B26C;
+
+}
+
+.hero-search-icon svg {
+
+    width: 22px;
+
+    height: 22px;
+
+    opacity: .85;
 
 }
 
@@ -352,13 +376,13 @@
 
     font-size: clamp(60px, 8vw, 108px);
 
-    line-height: 1.02;
+    line-height: .92;
 
     font-weight: 300;
 
     color: #F4F1EC;
 
-    margin: 0 0 70px;
+    margin: 0 0 50px;
 
 }
 
@@ -369,15 +393,15 @@
 
 .hero p {
 
-    margin: 0 auto 70px;
+    margin: 0 auto 50px;
 
     max-width: 760px;
 
-    color: rgba(255, 255, 255, .78);
+    color: rgba(255, 255, 255, .82);
 
     font-size: 1.25rem;
 
-    line-height: 1.75;
+    line-height: 1.8;
 
 }
 

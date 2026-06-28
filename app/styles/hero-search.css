@@ -10,6 +10,8 @@
 
     position: relative;
 
+    margin-top:52px;
+
 }
 
 .hero-search {
@@ -66,6 +68,24 @@
 
 }
 
+.hero-search:hover{
+
+    border-color:#F0CB82;
+
+    box-shadow:
+
+        0 0 12px rgba(255,220,140,.95),
+
+        0 0 28px rgba(255,220,140,.85),
+
+        0 0 55px rgba(255,220,140,.55),
+
+        0 0 100px rgba(255,220,140,.30),
+
+        0 22px 45px rgba(0,0,0,.40);
+
+}
+
 .hero-search-icon {
 
     width: 64px;
@@ -81,6 +101,19 @@
     border: 1px solid rgba(228, 190, 118, .22);
 
     background: rgba(255, 255, 255, .015);
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+
+}
+
+.hero-search:hover .hero-search-icon{
+
+    transform:rotate(18deg);
+
+    box-shadow:
+        0 0 18px rgba(216,178,108,.28);
 
 }
 

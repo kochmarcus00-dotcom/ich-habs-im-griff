@@ -1,6 +1,6 @@
 import HeroHeadline from "./HeroHeadline";
 import HeroSearch from "./HeroSearch";
-import HeroSuggestions from "./HeroSuggestions";
+import FeaturedThoughts from "../Thought/FeaturedThoughts";
 
 export default function Hero() {
     return (
@@ -18,7 +18,7 @@ export default function Hero() {
 
                 <HeroSearch />
 
-                <HeroSuggestions />
+                <FeaturedThoughts />
 
             </div>
 
