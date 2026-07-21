@@ -1,0 +1,357 @@
+.theme-page {
+
+    min-height: 100vh;
+
+    background: #f7f7f5;
+
+    color: #202020;
+
+}
+
+.theme-container {
+
+    width: min(1100px, 90vw);
+
+    margin: 0 auto;
+
+}
+
+.theme-hero {
+
+    padding: 120px 0 90px;
+
+    border-bottom: 1px solid #eceae4;
+
+    background:
+
+        radial-gradient(circle at top,
+            rgba(196, 215, 235, .28),
+            transparent 60%),
+
+        #faf9f7;
+
+}
+
+.theme-kicker {
+
+    font-size: .85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .18em;
+
+    color: #7d8da1;
+
+    margin-bottom: 20px;
+
+}
+
+.theme-hero h1 {
+
+    font-size: clamp(3rem, 7vw, 5.5rem);
+
+    line-height: .95;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+
+    color: #162130;
+
+}
+
+.theme-intro {
+
+    max-width: 760px;
+
+    font-size: 1.35rem;
+
+    line-height: 1.8;
+
+    color: #4c5561;
+
+}
+
+/* ==========================================================
+   THOUGHT NAVIGATOR
+========================================================== */
+
+.theme-thoughts {
+
+    padding: 90px 0;
+
+}
+
+.section-kicker {
+
+    font-size: .78rem;
+
+    letter-spacing: .24em;
+
+    text-transform: uppercase;
+
+    color: #9a8665;
+
+    margin-bottom: 18px;
+
+}
+
+.theme-thoughts h2 {
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 55px;
+
+    color: #182338;
+
+}
+
+.thought-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 28px;
+
+}
+
+.thought-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 260px;
+
+    padding: 34px;
+
+    border-radius: 26px;
+
+    background: white;
+
+    border: 1px solid rgba(20, 30, 45, .08);
+
+    box-shadow:
+
+        0 14px 40px rgba(15, 25, 45, .05);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: .35s ease;
+
+}
+
+.thought-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 30px 70px rgba(15, 25, 45, .10);
+
+}
+
+.thought-icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 26px;
+
+}
+
+.thought-card h3 {
+
+    font-size: 1.45rem;
+
+    line-height: 1.35;
+
+    margin-bottom: 18px;
+
+    color: #182338;
+
+}
+
+.thought-card p {
+
+    color: #66707f;
+
+    line-height: 1.7;
+
+    flex: 1;
+
+}
+
+.thought-card span {
+
+    margin-top: 34px;
+
+    color: #b18742;
+
+    font-weight: 600;
+
+    letter-spacing: .04em;
+
+}
+
+.theme-clusters {
+
+    padding: 90px 0;
+
+}
+
+.cluster-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+}
+
+.cluster-pill {
+
+    padding: 14px 24px;
+
+    border-radius: 999px;
+
+    border: none;
+
+    background: #eef3f8;
+
+    color: #243347;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.cluster-pill:hover {
+
+    background: #dfeaf5;
+
+    transform: translateY(-2px);
+
+}
+
+.theme-insight {
+
+    padding: 70px 0;
+
+}
+
+.insight-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(135deg,
+            #fffdf9,
+            #f9f4ea);
+
+    border: 1px solid rgba(177, 135, 66, .15);
+
+}
+
+.insight-kicker {
+
+    text-transform: uppercase;
+
+    letter-spacing: .2em;
+
+    color: #b18742;
+
+    font-size: .8rem;
+
+    margin-bottom: 24px;
+
+}
+
+.insight-box blockquote {
+
+    font-size: 2rem;
+
+    line-height: 1.55;
+
+    font-weight: 300;
+
+    color: #243347;
+
+    margin: 0;
+
+}
+
+/*=========================================================
+ EXPERIENCE
+=========================================================*/
+
+.theme-experience {
+
+    padding: 90px 0 70px;
+
+}
+
+.experience-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 28px;
+
+    margin-top: 45px;
+
+}
+
+.experience-card {
+
+    padding: 34px;
+
+    border-radius: 24px;
+
+    background: #f8f7f3;
+
+    border: 1px solid rgba(0, 0, 0, .05);
+
+    transition: .25s;
+
+}
+
+.experience-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.experience-card h3 {
+
+    font-size: 1.25rem;
+
+    line-height: 1.45;
+
+    margin-bottom: 18px;
+
+    color: #22324a;
+
+}
+
+.experience-card p {
+
+    color: #697385;
+
+    line-height: 1.75;
+
+}

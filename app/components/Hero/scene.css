@@ -1,0 +1,196 @@
+.hero-scene {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+/* -------------------- */
+/* Himmel */
+/* -------------------- */
+
+.scene-sky {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(ellipse at 50% 78%,
+            rgba(255, 199, 120, .22) 0%,
+            rgba(255, 170, 80, .12) 18%,
+            transparent 48%),
+
+        radial-gradient(circle at 50% 100%,
+            rgba(255, 230, 180, .10) 0%,
+            transparent 60%),
+
+        linear-gradient(to bottom,
+            #08121f 0%,
+            #10233f 22%,
+            #2b4266 55%,
+            #8a5d4d 82%,
+            #d18b58 100%);
+
+}
+
+/* -------------------- */
+/* Horizont */
+/* -------------------- */
+
+.scene-horizon {
+
+    position: absolute;
+
+    left: -15%;
+
+    right: -15%;
+
+    bottom: 11%;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(ellipse,
+
+            rgba(255, 235, 185, .42) 0%,
+
+            rgba(255, 185, 110, .24) 42%,
+
+            rgba(255, 140, 80, .08) 68%,
+
+            transparent 78%);
+
+    filter: blur(90px);
+
+}
+
+/* -------------------- */
+/* Nebel hinten */
+/* -------------------- */
+
+.scene-mist-back {
+
+    position: absolute;
+
+    left: -20%;
+
+    right: -20%;
+
+    bottom: -8%;
+
+    height: 42%;
+
+    background:
+
+        radial-gradient(ellipse at center,
+
+            rgba(255, 255, 255, .10) 0%,
+
+            rgba(255, 255, 255, .05) 35%,
+
+            transparent 72%);
+
+    filter: blur(90px);
+
+}
+
+/* -------------------- */
+/* Licht */
+/* -------------------- */
+
+.scene-beam {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 5%;
+
+    width: 900px;
+
+    height: 900px;
+
+    transform: translateX(-50%);
+
+}
+
+/* -------------------- */
+/* Nebel vorne */
+/* -------------------- */
+
+.scene-mist-front {
+
+    position: absolute;
+
+    left: -25%;
+
+    right: -25%;
+
+    bottom: -15%;
+
+    height: 28%;
+
+    background:
+
+        radial-gradient(ellipse at center,
+
+            rgba(255, 255, 255, .18) 0%,
+
+            rgba(255, 255, 255, .08) 40%,
+
+            transparent 80%);
+
+    filter: blur(120px);
+
+}
+
+/* -------------------- */
+/* Sonne */
+/* -------------------- */
+
+.scene-sun {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 16%;
+
+    width: 180px;
+
+    aspect-ratio: 1;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(circle,
+
+            rgba(255, 245, 215, .95) 0%,
+
+            rgba(255, 225, 170, .75) 28%,
+
+            rgba(255, 185, 120, .30) 60%,
+
+            transparent 100%);
+
+    filter: blur(28px);
+
+    opacity: .55;
+
+}
+
