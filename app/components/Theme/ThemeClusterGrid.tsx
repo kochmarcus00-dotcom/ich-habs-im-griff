@@ -5,8 +5,6 @@ const clusters = [
   "REM-Schlaf",
   "Tiefschlaf",
   "Müdigkeit",
-  "Schlafdruck",
-  "Abendroutine",
 ];
 
 export default function ThemeClusterGrid() {

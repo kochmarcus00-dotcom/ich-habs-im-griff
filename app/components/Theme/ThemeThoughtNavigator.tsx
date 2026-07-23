@@ -17,12 +17,6 @@ const thoughts = [
         href: "#",
         icon: "💭",
     },
-    {
-        title: "Ich bin morgens erschöpft.",
-        subtitle: "Obwohl ich geschlafen habe.",
-        href: "#",
-        icon: "☀️",
-    },
 ];
 
 export default function ThemeThoughtNavigator() {

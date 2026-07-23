@@ -2,7 +2,7 @@
 
     min-height: 100vh;
 
-    background: #f7f7f5;
+    background: #f8f6f2;
 
     color: #202020;
 
@@ -10,7 +10,7 @@
 
 .theme-container {
 
-    width: min(1100px, 90vw);
+    width: min(1200px, 92vw);
 
     margin: 0 auto;
 
@@ -18,7 +18,7 @@
 
 .theme-hero {
 
-    padding: 120px 0 90px;
+    padding: 170px 0 150px;
 
     border-bottom: 1px solid #eceae4;
 
@@ -48,13 +48,15 @@
 
 .theme-hero h1 {
 
-    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-size: 5.4rem;
 
     line-height: .95;
 
+    letter-spacing: -.04em;
+
     font-weight: 700;
 
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 
     color: #162130;
 
@@ -118,59 +120,95 @@
 
 .thought-card {
 
+    position: relative;
+
     display: flex;
 
     flex-direction: column;
 
     justify-content: space-between;
 
-    min-height: 260px;
+    min-height: 320px;
 
-    padding: 34px;
+    padding: 42px;
 
-    border-radius: 26px;
+    border-radius: 30px;
 
     background: white;
 
-    border: 1px solid rgba(20, 30, 45, .08);
+    border: 1px solid rgba(20, 30, 45, .06);
 
     box-shadow:
 
-        0 14px 40px rgba(15, 25, 45, .05);
+        0 18px 55px rgba(15, 25, 45, .05);
 
     text-decoration: none;
 
     color: inherit;
 
-    transition: .35s ease;
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
 
 }
 
 .thought-card:hover {
 
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 
     box-shadow:
 
-        0 30px 70px rgba(15, 25, 45, .10);
+        0 30px 80px rgba(15, 25, 45, .12);
+
+}
+
+.thought-card:hover span {
+
+    transform: translateX(6px);
 
 }
 
 .thought-icon {
 
+    width: 72px;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: #f6f7fb;
+
     font-size: 2rem;
 
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+
+    transition: .35s;
+
+}
+
+.thought-card:hover .thought-icon {
+
+    transform: scale(1.12);
+
+    background: #fff8ec;
 
 }
 
 .thought-card h3 {
 
-    font-size: 1.45rem;
+    font-size: 1.55rem;
 
     line-height: 1.35;
 
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 
     color: #182338;
 
@@ -188,13 +226,15 @@
 
 .thought-card span {
 
-    margin-top: 34px;
+    margin-top: 36px;
 
     color: #b18742;
 
     font-weight: 600;
 
-    letter-spacing: .04em;
+    letter-spacing: .05em;
+
+    transition: .3s;
 
 }
 
@@ -206,31 +246,43 @@
 
 .cluster-grid {
 
-    display: flex;
+    display: grid;
 
-    flex-wrap: wrap;
+    grid-template-columns: repeat(6, 1fr);
 
-    gap: 16px;
+    gap: 18px;
+
+    margin-top: 26px;
 
 }
 
 .cluster-pill {
 
-    padding: 14px 24px;
+    display: flex;
 
-    border-radius: 999px;
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 52px;
 
     border: none;
+
+    border-radius: 999px;
 
     background: #eef3f8;
 
     color: #243347;
 
-    font-size: 1rem;
+    font-size: .95rem;
+
+    font-weight: 500;
 
     cursor: pointer;
 
-    transition: .25s;
+    transition: all .25s ease;
 
 }
 
@@ -250,9 +302,11 @@
 
 .insight-box {
 
-    max-width: 900px;
+    position: relative;
 
-    margin: auto;
+    width: 100%;
+
+    margin: 0;
 
     padding: 50px;
 
@@ -263,6 +317,26 @@
             #f9f4ea);
 
     border: 1px solid rgba(177, 135, 66, .15);
+
+}
+
+.insight-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50px;
+
+    top: 0;
+
+    width: 90px;
+
+    height: 3px;
+
+    background: #c8a45f;
+
+    border-radius: 20px;
 
 }
 
@@ -322,9 +396,9 @@
 
     border-radius: 24px;
 
-    background: #f8f7f3;
+    background: #fcfbf8;
 
-    border: 1px solid rgba(0, 0, 0, .05);
+    border: 1px solid rgba(180, 170, 150, .10);
 
     transition: .25s;
 
