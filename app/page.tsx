@@ -495,7 +495,7 @@ export default function HomePage() {
               margin: "0 auto",
               padding: "70px 40px",
               display: "grid",
-              gridTemplateColumns: "1.5fr 1fr 1fr 1fr",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "60px",
             }}
           >
@@ -506,6 +506,7 @@ export default function HomePage() {
                   display: "flex",
                   gap: "32px",
                   alignItems: "center",
+                  flexWrap: "wrap",
                 }}
               >
                 <Image
@@ -678,7 +679,7 @@ export default function HomePage() {
                 style={{
                   color: "white",
                   lineHeight: "1.7",
-                  fontSize: "30px",
+                  fontSize: "clamp(22px, 3vw, 30px)",
                 }}
               >
                 Der schwierigste Schritt ist nicht,
